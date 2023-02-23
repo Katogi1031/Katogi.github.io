@@ -1,0 +1,93 @@
+@use '../globals' as *;
+
+body{
+    font-family: 'Jacques Francois', serif;
+}
+
+// 画面サイズごとのフォントサイズ
+.font-sm{
+    font-size: 14px;
+}
+.font-md{
+    font-size: 17px;
+}
+.font-lg{
+    font-size: 25px;
+}
+
+
+// コンテンツ上部のタイトルフォントの大きさ
+// 960px以上
+.title-lg{
+    font-size: 42px;
+}
+
+// 600px以上960px未満
+.title-md{
+    font-size: 32px;
+}
+
+// 600px未満
+.title-sm{
+    font-size: 28px;
+}
+
+// タイトル位置のテンプレート
+.temp-title{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+    
+    & .title{
+        text-align: center;
+        & p{
+            @extend .title-lg;
+        }
+    }
+}
+
+// ボタンのプロパティ
+// 960px以上の場合
+.btn-lg{
+    font-size: 20px;
+    padding: 15px 25px;
+
+}
+
+// 600px以上960px未満
+// .btn-md{
+
+// }
+
+// 600px未満
+// .btn-sm{
+
+// }
+
+// テーブルのプロパティ
+.table-prop{
+    font-family: 'Roboto', serif;
+    & table{
+        text-align: start;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    & .record-table {
+        padding: 10px 0;
+        font-size: 22px;
+        & th{
+            background: #e1e0e0;
+            border: 1px solid #ccc;
+            color: black;
+            padding: 10px;
+        }
+
+        & td{
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    }
+}

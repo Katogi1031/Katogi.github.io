@@ -1,0 +1,63 @@
+@use '../globals' as *;
+@use './common' as *;
+
+#content{
+    & .top{
+        width: 70%;
+        display: flex;
+        margin: 200px auto;
+        justify-content: space-around;
+        margin-bottom: 300px;
+
+        @include mq(md){
+            width: 80%;            
+            display: block;
+        }
+
+        &__left{
+            & .top__title p{
+                line-height: 0.5em; // 「Find Rigger With Parnas」の行間
+                font-size: 48px;
+
+                @include mq(md){
+                    font-size: 42px;
+                }
+
+                @include mq(sm){
+                    font-size: 32px;
+                }
+            }
+    
+            & .sub__title p{
+                font-size: 24px;
+
+                @include mq(md){
+                    font-size: 22px;
+                }
+                @include mq(sm){
+                    font-size: 16px;
+                }
+            }
+        }
+        &__right{
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    & .btn-gradient{
+        @extend .btn-lg;
+
+        @include mq(md){
+            font-size: 18px;   
+        }
+
+        & .remove{
+            @include mq(sm){
+                display: none;
+            }
+        }
+    }
+}

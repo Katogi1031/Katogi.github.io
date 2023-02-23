@@ -1,0 +1,66 @@
+@use '../globals' as *;
+@use './common' as *;
+
+
+.recruit2{
+
+    // タイトル
+    @extend .temp-title;
+
+    & .title p{
+        @include mq(md){
+            font-size: 32px;
+        }
+        @include mq(sm){
+            font-size: 28px;
+        }
+    }
+    
+
+    &__info{
+        @extend .table-prop;
+        & .record-table{
+            width: 80%;
+
+            @include mq(md){
+                width: 90%;
+            }
+
+            & td{
+                @include mq(md){
+                    padding: 10px;
+                    text-align: start;
+                }
+
+                & p{
+                    line-height: 0.2em;
+                }
+                & ul{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            @include mq(sm){
+                & th,
+                & td{
+                    border-bottom: none;
+                    display: block;
+                    padding-left: 10px;
+                    font-size: 16px;
+                }
+
+                & .last td:last-child{
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+        }
+    } 
+    & .btn-flat{
+        @extend .btn-lg;
+
+        @include mq(sm){
+            font-size: 16px;
+        }
+    }
+}

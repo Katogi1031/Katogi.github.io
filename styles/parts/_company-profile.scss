@@ -1,0 +1,97 @@
+@use '../globals' as *;
+@use './common' as *;
+
+.president{
+
+    // タイトル
+    @extend .temp-title;
+
+    & .title p{
+        @include mq(md){
+            font-size: 32px;       
+        }
+    
+        @include mq(sm){
+            font-size: 28px;
+        }
+    }
+
+    & .message{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        // align-items: flex-start;
+        align-items: center;
+        margin: 0 auto;
+
+        @include mq(md){
+            display: block;   
+        }
+        
+        &__left{
+            text-align: center;
+            margin: 0 30px 0 0;
+            // margin-right: 30px;
+
+            @include mq(md){
+                margin-right: 0;
+                padding-bottom: 30px;
+            }
+
+            & .president__info {
+                margin: 0 auto;
+                & img{
+                    width: 420px;
+                    height: 450px;
+                    object-fit: cover;
+
+                    @include mq(md){
+                        width: 400px;
+                        height: 450px;
+                    }
+
+                    @include mq(sm){
+                        width: 300px;
+                        height: 320px;
+                    }
+                }
+
+                & p{
+                    text-align: start;
+                    font-size: 24px;
+
+                    @include mq(md){
+                        text-align: center;
+                    }
+                    @include mq(sm){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &__right{
+            & .president__message{
+                font-size: 24px;
+                text-align: start;
+
+                @include mq(md){
+                    font-size: 20px;
+                }
+
+                @include mq(sm){
+                    font-size: 16px;
+                }
+
+                & span{
+                    display: block;
+                    margin-bottom: 30px;
+
+                    @include mq(sm){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atsuy's Site</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"/>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- jQueryの読み込み -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+        <title>Parnas | リガーを探す。日本全国から。</title>
+
+        <!--キャッシュを無効化。毎回正しいデータを閲覧してもらう-->
+        <meta http-equiv="Cache-Control" content="no-store">
+    </head>
+    <body>
+        <div id="global-container">
+            <div class="container">
+                <!-- ヘッダーの読み込み -->
+                <div id="header"></div>
+                <main id="content">
+                    <div class="top">
+                        <div class="top__left">
+                            <div class="top__title">
+                                <p>Find Rigger</p>
+                                <p>With Parnas</p>
+                            </div>
+                            <div class="sub__title">
+                                <p>優秀なリガーを見つける、日本全国から。</p>
+                            </div>
+                        </div>
+                        <div class="top__right">
+                            <a href="./works.html" class="btn btn-gradient"><span>デモ<span class="remove">リール</span>を視聴</span></a>
+                        </div>
+                    </div>
+                    <div id="main-content">
+                        <div class="desc-contents">
+                            <div class="content-left">
+                                <div class="main-title">
+                                    <p>Parnas(パルナス)はリギング専門の<span>クリエイター集団です。</span></p>
+                                </div>
+                                <div class="sub-title">
+                                    <p>委託先をお探しの方は<span>お気軽にご相談ください</span></p>
+                                </div>
+                                
+                                <a href="./aboutus.html" class="btn btn-flat"><span>Parnasについて知る</span></a>
+                            </div>
+                            <div class="content-right">
+                                <div>
+                                    <img src="./img/Car04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="service__description">
+                                <div class="main-title">
+                                    <p><span class="remove">Parnas</span>リギングサービス特長</p>
+                                </div>
+                                <!-- <div class="description">
+                                    <p>私たちはCG制作の中で最も人材育成・維持が難しい業務の一つであるリギング業務(骨格設定・物理演算)に特化したサービスを提供しています。
+                                        全国から優秀なクリエイタがフルリモートで集い、映像制作を支援します。
+                                    </p>
+                                </div> -->
+                            </div>
+                            <div class="service__details">
+                                <div class="feature">
+                                    <div class="feature__text">
+                                        <div class="title">
+                                            <p>&#8544;. リグの専門集団</p>
+                                        </div>
+                                        <div class="description">
+                                            <p>CG制作会社の多くはモデリングからリギング、アニメーションまでを請け負う総合サービスを展開しています。
+                                                その中で私たちはリガーのみを採用し、チームとして積極的にノウハウを共有・蓄積することで、
+                                                専門サービスにしかできないスピードとクオリティを提供します。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="feature__image">
+                                        <img src="./img/Squid04.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="feature reverse">
+                                    <div class="feature__text">
+                                        <div class="title">
+                                            <p>&#8545;. 映像制作に特化</p>
+                                        </div>
+                                        <div class="description">
+                                            <p>私たちはCG制作の中でもMayaを用いたセルルック映像制作に注力しています。
+                                                映像制作の応用領域は広く、ゲーム内の映像や遊戯用、メタバース、広告制作
+                                                においてもクライアントを支援することが可能です。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="feature__image">
+                                        <img src="./img/human.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="feature">
+                                    <div class="feature__text">
+                                        <div class="title">
+                                            <p>&#8546;. 全国フルリモート</p>
+                                        </div>
+                                        <div class="description">
+                                            <p>私たちはフルリモートでの労働環境を整備することで全国の優秀な人材を発掘します。
+                                                東京に集中するCGスタジオのリソース課題を解消し、同時に地方の雇用創出を支援することで
+                                                長期的に継続可能なサービスを提供します。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="feature__image">
+                                        <img src="./img/jpn.png" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <a href="./contact.html" class="btn overhang-flat"><span>資料請求 / お問い合わせ</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                
+
+                <!-- フッターの読み込み -->
+                <div id="footer"></div>
+                
+            </div>
+        </div>
+        <script>
+            $(function() {
+                $("#header").load("common/header.html", function() {
+                    // ハンバーガーメニュー機能
+                    $.getScript("js/lib/mobile-menu.js");
+                });
+                $("#footer").load("common/footer.html");
+            });
+
+        </script>
+         
+    </body>
 </html>

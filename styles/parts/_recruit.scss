@@ -1,0 +1,115 @@
+@use '../globals' as *;
+@use './common' as *;
+
+.recruit{
+    width: 60%;
+    margin: 100px auto 0 auto;
+    padding-bottom: 50px;
+    
+
+    @include mq(md){
+        width: 90%;   
+    }
+
+    &__title{
+        display: flex;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        justify-content: center;
+        align-items: center;
+        & p{
+            line-height: 1.6em;
+            font-size: 48px;
+
+            @include mq(md){
+                text-align: start;
+                font-size: 32px;
+            }
+
+            @include mq(sm){
+                font-size: 28px;
+            }
+        }
+        & span{
+            display: block;
+        }
+    }
+    &__texts{
+        text-align: center;
+        margin-bottom: 100px;
+        & .title{
+            text-align: start;
+            font-size: 32px;
+
+            @include mq(md){
+                font-size: 28px;
+            }
+
+            @include mq(sm){
+                font-size: 22px;
+            }
+        }
+
+        & .description{
+            text-align: start;
+            font-size: 22px;
+            margin-left: 15px;
+            line-height: 2em;
+
+            @include mq(md){
+                line-height: 1.5em;
+            }
+
+            @include mq(sm){
+                font-size: 16px;
+            }
+
+            & span{
+                display: block;
+                padding-bottom: 20px;
+            }
+        }
+
+        & .btn-flat{
+            margin-top: 30px;
+            @extend .btn-lg;
+
+            @include mq(md){
+                font-size: 14px;
+            }
+
+            & span{
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    & .work{
+        display: flex;
+        
+
+        @include mq(md){
+            display: block;   
+            margin: 0 auto;
+        }
+        
+        &__left{
+            width: 50%;
+            margin-right: 15px;
+
+            @include mq(md){
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        &__right{
+            width: 50%;
+
+            @include mq(md){
+                width: 100%;
+                
+            }
+        }
+    }
+}
