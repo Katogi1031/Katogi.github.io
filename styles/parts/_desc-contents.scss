@@ -23,21 +23,7 @@
     }
 
     & span.parnas-area{
-        padding-left: 15px;
-        text-align: start;
-        background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
-        background: -webkit-linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-        font-family: 'Noto Sans', sans-serif;
-        font-size: 96px;
-        // color: #E7E7E7;
-        color: rgba(2, 101, 176, 0.302);
-
-        @include mq(sm){
-            font-size: 64px;
-        }
+        @extend .grad-title;
     }
     
 

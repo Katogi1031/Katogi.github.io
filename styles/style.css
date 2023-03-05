@@ -121,7 +121,6 @@ body {
 .temp-title, .policy, .member, .recruit2, .production, .president, .company {
   width: 100%;
   padding-top: 100px;
-  padding-bottom: 100px;
   margin: 0 auto;
   text-align: center;
 }
@@ -154,6 +153,24 @@ body {
 .table-prop .record-table td, .recruit2__info .record-table td, .company__info .record-table td {
   border: 1px solid #ccc;
   padding: 10px;
+}
+
+.grad-title, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+  display: block;
+  text-align: start;
+  background: linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
+  background: -webkit-linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 96px;
+  color: rgba(2, 101, 176, 0.302);
+}
+@media screen and (max-width: 600px) {
+  .grad-title, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+    font-size: 64px;
+    text-align: center;
+  }
 }
 
 /* モバイルメニューの実装 960px以下の場合 */
@@ -419,22 +436,6 @@ body {
     padding-bottom: 100px;
   }
 }
-.desc-contents span.parnas-area {
-  padding-left: 15px;
-  text-align: start;
-  background: linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
-  background: -webkit-linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 96px;
-  color: rgba(2, 101, 176, 0.302);
-}
-@media screen and (max-width: 600px) {
-  .desc-contents span.parnas-area {
-    font-size: 64px;
-  }
-}
 .desc-contents .content-left {
   align-items: center;
   margin-right: 100px;
@@ -548,22 +549,6 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
-}
-.service__description .main-title span:nth-child(1) {
-  display: block;
-  text-align: start;
-  background: linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
-  background: -webkit-linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Noto Sans", sans-serif;
-  font-size: 96px;
-  color: rgba(2, 101, 176, 0.302);
-}
-@media screen and (max-width: 600px) {
-  .service__description .main-title span:nth-child(1) {
-    font-size: 64px;
-  }
 }
 .service__description .main-title span:nth-child(2) {
   display: flex;
@@ -935,6 +920,9 @@ body {
   }
 }
 
+.production {
+  padding-bottom: 100px;
+}
 @media screen and (max-width: 600px) {
   .production {
     width: 90%;
@@ -1120,6 +1108,9 @@ body {
   }
 }
 
+.recruit2 {
+  padding-bottom: 100px;
+}
 @media screen and (max-width: 960px) {
   .recruit2 .title p {
     font-size: 32px;
