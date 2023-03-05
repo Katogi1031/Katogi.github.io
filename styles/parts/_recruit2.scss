@@ -6,6 +6,7 @@
 
     // タイトル
     @extend .temp-title;
+    padding-bottom: 100px;
 
     & .title p{
         @include mq(md){
