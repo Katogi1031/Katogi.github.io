@@ -25,12 +25,15 @@
         margin: 0 auto;
 
         @include mq(md){
-            display: block;   
+            // display: block;
+            flex-direction: column;
+            width: 80%;
         }
         
         &__left{
             text-align: center;
             margin: 0 30px 0 0;
+            
             // margin-right: 30px;
 
             @include mq(md){
@@ -41,24 +44,24 @@
             & .president__info {
                 margin: 0 auto;
                 & img{
-                    width: 420px;
-                    height: 450px;
+                    width: 300px;
+                    height: 320px;
                     object-fit: cover;
 
                     @include mq(md){
-                        width: 400px;
-                        height: 450px;
+                        width: 250px;
+                        height: 270px;
                     }
 
                     @include mq(sm){
-                        width: 300px;
-                        height: 320px;
+                        // width: 300px;
+                        // height: 320px;
                     }
                 }
 
                 & p{
                     text-align: start;
-                    font-size: 24px;
+                    font-size: 16px;
 
                     @include mq(md){
                         text-align: center;
@@ -72,10 +75,11 @@
 
         &__right{
             & .president__message{
-                font-size: 24px;
+                font-size: 20px;
                 text-align: start;
 
                 @include mq(md){
+                    // width: 100%;
                     font-size: 20px;
                 }
 

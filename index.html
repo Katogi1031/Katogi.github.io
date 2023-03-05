@@ -28,9 +28,32 @@
         <div id="global-container">
             <div class="container">
                 <!-- ヘッダーの読み込み -->
-                <div id="header"></div>
-                <main id="content">
-                    <div class="top">
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img"></a>
+                        </div>
+                
+                        <nav class="header__nav" id="js-nav">
+                            <ul class="header__ul header__items">
+                                <!-- <li class="header__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="header__li"><a href="./aboutus.html">会社概要</a></li>
+                                <li class="header__li"><a href="./works.html">制作実績</a></li>
+                                <li class="header__li"><a href="./recruit.html">採用情報</a></li>
+                                <li class="header__li"><a href="./contact.html">お問い合わせ</a></li>
+                                <!-- <li class="header__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                
+                        <button class="header__hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+                <div class="top">
+                    <div class="top__content">
                         <div class="top__left">
                             <div class="top__title">
                                 <p>Find Rigger</p>
@@ -44,6 +67,30 @@
                             <a href="./works.html" class="btn btn-gradient"><span>デモ<span class="remove">リール</span>を視聴</span></a>
                         </div>
                     </div>
+                    <div id="top__header">
+                        <div id="video-area">
+                            <video id="video" poster="img/movie.jpg" webkit-playsinline playsinline muted autoplay loop>
+                                <!--
+                                poster：動画ファイルが利用できない環境で代替表示される画像
+                                webkit-playsinline：iOS 9までのSafari用インライン再生指定
+                                playsinline：iOS 10以降のSafari用インライン再生指定
+                                muted：音声をミュートさせる
+                                autoplay：動画を自動再生させる
+                                loop：動画をループさせる
+                                controls：コントロールバーを表示する
+                                -->
+                                <source src="movie/Demo_squid.mp4">
+                                <!-- <source src="video/movie.ogv" type="video/ogv">
+                                <source src="video/movie.webm" type="video/webm"> -->
+                                <p>動画を再生できる環境ではありません。</p>
+                            </video>
+                            <!--/video-area-->
+                        </div>
+                    </div>
+                </div>
+                <!-- <main></main> -->
+                <main id="content">
+
                     <div id="main-content">
                         <div class="desc-contents">
                             <div class="content-left">
@@ -67,11 +114,6 @@
                                 <div class="main-title">
                                     <p><span class="remove">Parnas</span>リギングサービス特長</p>
                                 </div>
-                                <!-- <div class="description">
-                                    <p>私たちはCG制作の中で最も人材育成・維持が難しい業務の一つであるリギング業務(骨格設定・物理演算)に特化したサービスを提供しています。
-                                        全国から優秀なクリエイタがフルリモートで集い、映像制作を支援します。
-                                    </p>
-                                </div> -->
                             </div>
                             <div class="service__details">
                                 <div class="feature">
@@ -132,21 +174,36 @@
                 </main>
                 
 
-                <!-- フッターの読み込み -->
-                <div id="footer"></div>
+                <!-- フッター -->
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="./img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="privacy-policy">
+                                <a href="./policy.html">プライバシーポリシー</a>
+                            </div>
+                            <p class="copy-right">&copy; 2023 Parnas inc.</p>
+                        </div>
+                        
+                        <nav class="footer__nav">
+                            <ul class="footer__ul">
+                                <!-- <li class="footer__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="footer__li"><a href="./aboutus.html">会社概要</a></li>
+                                <li class="footer__li"><a href="./works.html">制作実績</a></li>
+                                <li class="footer__li"><a href="./recruit.html">採用情報</a></li>
+                                <li class="footer__li"><a href="./contact.html">お問い合わせ</a></li>
+                                <!-- <li class="footer__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
                 
             </div>
         </div>
-        <script>
-            $(function() {
-                $("#header").load("common/header.html", function() {
-                    // ハンバーガーメニュー機能
-                    $.getScript("js/lib/mobile-menu.js");
-                });
-                $("#footer").load("common/footer.html");
-            });
-
-        </script>
-         
+        <script src="./js/lib/mobile-menu.js"></script>
     </body>
 </html>

@@ -1,8 +1,8 @@
 @use './parts/button' as *;
 @use './parts/common' as *;
-@use './parts/desc-contents' as *;
-@use './parts/footer' as *;
 @use './parts/header' as *;
+@use './parts/footer' as *;
+@use './parts/desc-contents' as *;
 @use './parts/services' as *;
 @use './parts/top-content' as *;
 @use './parts/table' as *;
@@ -22,8 +22,8 @@
 }
 
 #content{
-    padding-top: 80px;
-    width: 100%;
+    // padding-top: 80px;
+    // width: 100%;
     background-color: #f1f1f1;
 
 }
@@ -35,4 +35,8 @@
         text-align: center;
         margin-bottom: 100px;
     }
+}
+
+main{
+    padding: 100px 0;
 }

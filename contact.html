@@ -27,29 +27,70 @@
         <div id="global-container">
             <div class="container">
                 <!-- ヘッダーの読み込み -->
-                <div id="header"></div>
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img"></a>
+                        </div>
+                
+                        <nav class="header__nav" id="js-nav">
+                            <ul class="header__ul header__items">
+                                <!-- <li class="header__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="header__li"><a href="./aboutus.html">会社概要</a></li>
+                                <li class="header__li"><a href="./works.html">制作実績</a></li>
+                                <li class="header__li"><a href="./recruit.html">採用情報</a></li>
+                                <li class="header__li"><a href="./contact.html">お問い合わせ</a></li>
+                                <!-- <li class="header__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                
+                        <button class="header__hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
                 <main id="content">
                     <div class="contact">
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfMQgXf-si5DP4fLUBQxX8BvCDMNmVHwOdW-ysm7cSbM2WF9w/viewform?embedded=true" width="100%" height="864" frameborder="0" marginheight="0" marginwidth="0">
                             読み込んでいます…
                         </iframe>
                     </div>
-                                    </main>
+                </main>
 
-                <!-- フッターの読み込み -->
-                <div id="footer"></div>
+                <!-- フッター -->
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="./img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="privacy-policy">
+                                <a href="./policy.html">プライバシーポリシー</a>
+                            </div>
+                            <p class="copy-right">&copy; 2023 Parnas inc.</p>
+                        </div>
+                        
+                        <nav class="footer__nav">
+                            <ul class="footer__ul">
+                                <!-- <li class="footer__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="footer__li"><a href="./aboutus.html">会社概要</a></li>
+                                <li class="footer__li"><a href="./works.html">制作実績</a></li>
+                                <li class="footer__li"><a href="./recruit.html">採用情報</a></li>
+                                <li class="footer__li"><a href="./contact.html">お問い合わせ</a></li>
+                                <!-- <li class="footer__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+
+
             </div>
         </div>
-        
-        <script>
-            $(function() {
-                $("#header").load("common/header.html", function() {
-                    // ハンバーガーメニュー機能
-                    $.getScript("js/lib/mobile-menu.js");
-                });
-                $("#footer").load("common/footer.html");
-            });
+        <script src="js/lib/mobile-menu.js"></script>
 
-        </script>
     </body>
 </html>

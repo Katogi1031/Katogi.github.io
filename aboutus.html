@@ -33,37 +33,33 @@
         <div id="global-container">
             <div class="container">
                 <!-- ヘッダーの読み込み -->
-                <div id="header"></div>
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a href="./index.html"><img src="./img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img"></a>
+                        </div>
+                
+                        <nav class="header__nav" id="js-nav">
+                            <ul class="header__ul header__items">
+                                <!-- <li class="header__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="header__li"><a href="./aboutus.html">会社概要</a></li>
+                                <li class="header__li"><a href="./works.html">制作実績</a></li>
+                                <li class="header__li"><a href="./recruit.html">採用情報</a></li>
+                                <li class="header__li"><a href="./contact.html">お問い合わせ</a></li>
+                                <!-- <li class="header__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                
+                        <button class="header__hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
 
                 <!-- コンテンツ -->
                 <main id="content">
-                    <div class="president">
-                        <div class="title">
-                            <p>代表挨拶</p>
-                        </div>
-                        <div class="message">
-                            <div class="message__left">
-                                <div class="president__info">
-                                    <img src="./img/taka.png" alt="">
-                                    <p>株式会社Parnas代表取締役<br>山下　貴裕</p>
-                                </div>
-                            </div>
-                            <div class="message__right">
-                                <div class="president__message">
-                                    <span>
-                                        私たちはリギングに特化した受託サービスを提供しています。
-                                    </span>
-                                    <span>
-                                        最も人材育成が難しいリギング領域で、日本全国の若者に活躍できる機会を提供するためフルリモートで。<br>
-                                        こうしてParnasは生まれました。
-                                    </span>
-                                    <span>
-                                        日本のCGコンテンツを心待ちにする世界中の人々に感動を届けられるよう、チーム一丸となって技術を磨きます。
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="company">
                         <div class="title">
                             <p>会社概要</p>
@@ -97,6 +93,34 @@
                             </table>
                         </div>
                     </div>
+                    <div class="president">
+                        <div class="title">
+                            <p>代表挨拶</p>
+                        </div>
+                        <div class="message">
+                            <div class="message__left">
+                                <div class="president__info">
+                                    <img src="./img/taka.png" alt="">
+                                    <p>株式会社Parnas代表取締役<br>山下　貴裕</p>
+                                </div>
+                            </div>
+                            <div class="message__right">
+                                <div class="president__message">
+                                    <span>
+                                        私たちはリギングに特化した受託サービスを提供しています。
+                                    </span>
+                                    <span>
+                                        最も人材育成が難しいリギング領域で、日本全国の若者に活躍できる機会を提供するためフルリモートで。<br>
+                                        こうしてParnasは生まれました。
+                                    </span>
+                                    <span>
+                                        日本のCGコンテンツを心待ちにする世界中の人々に感動を届けられるよう、チーム一丸となって技術を磨きます。
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="member">
                         <div class="title">
                             <p>メンバー紹介</p>
@@ -110,7 +134,7 @@
                                                 <img src="./img/taka.png" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">Y.T</p>
+                                                <p class="name">T.Yamashita</p>
                                                 <p class="title">代表取締役</p>
                                             </div>
                                         </div>
@@ -119,7 +143,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">Y.T</p>
+                                                        <p class="name">T.Yamashita</p>
                                                         <p class="title">代表取締役</p>
                                                     </div>
                                                     <div class="carrer">
@@ -148,7 +172,7 @@
                                                 <img src="./img/Kikuchi.png" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">K.T</p>
+                                                <p class="name">T. Kikuchi</p>
                                                 <p class="title">リギングSV</p>
                                             </div>
                                         </div>
@@ -157,7 +181,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">K.T</p>
+                                                        <p class="name">T. Kikuchi</p>
                                                         <p class="title">リギングSV</p>
                                                     </div>
                                                     <div class="carrer">
@@ -183,7 +207,7 @@
                                                 <img src="./img/Squid_illust_02.png" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">D.Y</p>
+                                                <p class="name">Y.Daita</p>
                                                 <p class="title">リギングアーティスト</p>
                                             </div>
                                         </div>
@@ -192,7 +216,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">D.Y</p>
+                                                        <p class="name">Y.Daita</p>
                                                         <p class="title">リギングアーティスト</p>
                                                     </div>
                                                     <div class="carrer">
@@ -218,7 +242,7 @@
                                                 <img src="./img/Squid_illust_02.png" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">J.Y</p>
+                                                <p class="name">Y.Jidaisho</p>
                                                 <p class="title">リギングアーティスト</p>
                                             </div>
                                         </div>
@@ -227,7 +251,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">J.Y</p>
+                                                        <p class="name">Y.Jidaisho</p>
                                                         <p class="title">リギングアーティスト</p>
                                                     </div>
                                                     <div class="carrer">
@@ -253,7 +277,7 @@
                                                 <img src="./img/Squid_illust_02.png" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">K.Y</p>
+                                                <p class="name">Y.Toyama</p>
                                                 <p class="title">顧問</p>
                                             </div>
                                         </div>
@@ -262,7 +286,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">K.Y</p>
+                                                        <p class="name">Y.Toyama</p>
                                                         <p class="title">顧問</p>
                                                     </div>
                                                     <div class="carrer">
@@ -323,7 +347,7 @@
                                                 <img src="./img/Squid_illust_02.png" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">K.H</p>
+                                                <p class="name">H. Kanouchi</p>
                                                 <p class="title">アニメーター</p>
                                             </div>
                                         </div>
@@ -332,7 +356,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">K.H</p>
+                                                        <p class="name">H. Kanouchi</p>
                                                         <p class="title">アニメーター</p>
                                                     </div>
                                                     <div class="carrer">
@@ -358,7 +382,7 @@
                                                 <img src="./img/Katogi_cat.jpg" alt="">
                                             </a>
                                             <div class="title-name">
-                                                <p class="name">K.A</p>
+                                                <p class="name">A.Katogi</p>
                                                 <p class="title">エンジニア</p>
                                             </div>
                                         </div>
@@ -367,7 +391,7 @@
                                             <div class="profile">
                                                 <div class="profile__left">
                                                     <div class="personal-info">
-                                                        <p class="name">K.A</p>
+                                                        <p class="name">A.Katogi</p>
                                                         <p class="title">エンジニア</p>
                                                     </div>
                                                     <div class="carrer">
@@ -395,20 +419,36 @@
                     
                 </main>
 
-                <!-- フッターの読み込み -->
-                <div id="footer"></div>
+                <!-- フッター -->
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="./img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="privacy-policy">
+                                <a href="./policy.html">プライバシーポリシー</a>
+                            </div>
+                            <p class="copy-right">&copy; 2023 Parnas inc.</p>
+                        </div>
+                        
+                        <nav class="footer__nav">
+                            <ul class="footer__ul">
+                                <!-- <li class="footer__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="footer__li"><a href="./aboutus.html">会社概要</a></li>
+                                <li class="footer__li"><a href="./works.html">制作実績</a></li>
+                                <li class="footer__li"><a href="./recruit.html">採用情報</a></li>
+                                <li class="footer__li"><a href="./contact.html">お問い合わせ</a></li>
+                                <!-- <li class="footer__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
             </div>
         </div>
-        
-        <script>
-            $(function() {
-                $("#header").load("common/header.html", function() {
-                    // ハンバーガーメニュー機能
-                    $.getScript("js/lib/mobile-menu.js");
-                });
-                $("#footer").load("common/footer.html");
-            });
+        <script src="js/lib/mobile-menu.js"></script>
 
-        </script>
     </body>
 </html>

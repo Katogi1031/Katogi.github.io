@@ -25,7 +25,7 @@
 
         & .record-table{
             @include mq(md){
-                width: 60%;
+                width: 80%;
             }
             @include mq(sm){
                 width: 90%;
@@ -34,7 +34,7 @@
                     border-bottom: none;
                     display: block;
                     padding-left: 10px;
-                    font-size: 16px;
+                    font-size: 12px;
                 }
 
                 & .last td:last-child{
