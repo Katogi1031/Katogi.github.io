@@ -1,0 +1,48 @@
+@use '../globals' as *;
+@use './common' as *;
+
+
+.production{
+
+    // タイトル
+    @extend .temp-title;
+
+    @include mq(sm){
+        width: 90%;
+    }
+
+    &__text{
+        & .title p{
+            @include mq(sm){
+                font-size: 28px;
+            }
+        }
+        & .attention p{
+            font-size: 16px;
+
+            @include mq(sm){
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__movie iframe{
+        @include mq(md){
+            width: 90%;
+            height: 400px;
+        }
+        @include mq(sm){
+            height: 200px;
+        }
+
+    }
+
+    & .btn.btn-flat{
+        margin-top: 50px;
+        @extend .btn-lg;
+        
+        @include mq(sm){
+            font-size: 16px;
+        }
+    }
+}

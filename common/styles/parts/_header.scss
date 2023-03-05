@@ -1,0 +1,181 @@
+@use '../globals' as *;
+
+  
+/* モバイルメニューの実装 960px以下の場合 */
+// 参考 : https://zero-plus.io/media/jquery-hamburger/
+
+
+.header{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+
+    @include mq(md){
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    &__inner{
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+        position: relative;
+
+        @include mq(md){
+            padding: 0 30px;   
+        }
+
+        /* ヘッダーのロゴ部分 */
+        & .logo {
+            width: 120px;
+
+            &__img{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    
+    &__nav{
+        position: static;
+        transform: initial;
+        background-color: inherit;
+        height: inherit;
+        display: flex;
+        justify-content: end;
+        width: 40%;
+
+        @include mq(lg){
+            width: 60%;
+        }
+
+        @include mq(md){
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            transform: translateX(100%);
+            background-color: #fff;
+            transition: ease .4s;
+
+            /* ハンバーガーメニュークリック後のスタイル */
+            &.active {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &__items{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: initial;
+        justify-content: space-between;
+
+        @include mq(md){
+            flex-direction: column;
+        }
+    }
+
+    &__ul{
+        position: inherit;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        list-style: none;
+        padding: 0;
+
+        @include mq(md){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__li a{
+        color: black;
+        margin-bottom: 0;
+        font-size: 20px;
+        text-decoration: none;
+
+        @include mq(md){
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    }
+
+    @include mq(md){
+        /* ハンバーガーメニュー */
+        &__hamburger {
+            width: 48px;
+            height: 100%;
+        }   
+    }
+}
+
+
+// ハンバーガーメニューを表示しない
+.hamburger{
+    display: none;
+
+    @include mq(md){
+        background-color: transparent;
+        border-color: transparent;
+        z-index: 9999;
+
+        display: inline;
+
+        // ハンバーガーメニューの三本線の表示
+        & span{
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            position: relative;
+            transition: ease .4s;
+            display: block;
+        }
+        
+        & span:nth-child(1) {
+            top: 0;
+        }
+          
+        & span:nth-child(2) {
+        margin: 8px 0;
+        }
+        
+        & span:nth-child(3) {
+        top: 0;
+        }
+        
+        // ハンバーガーメニューがクリックされた場合の挙動
+        &.active span:nth-child(1) {
+        top: 5px;
+        transform: rotate(45deg);
+        }
+        
+        &.active span:nth-child(2) {
+        opacity: 0;
+        
+        }
+        
+        &.active span:nth-child(3) {
+        top: -13px;
+        transform: rotate(-45deg);
+        }
+    }
+}
+
+
+  
