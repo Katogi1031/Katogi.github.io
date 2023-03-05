@@ -3,6 +3,8 @@
 // 通常時のフッターの実装
 .footer{
     width: 100%;
+    // z-index: 99;
+    background-color: white;
 
     &__inner{
         width: 100%;

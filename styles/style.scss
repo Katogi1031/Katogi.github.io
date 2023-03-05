@@ -33,10 +33,11 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
     }
 }
 
 main{
+    z-index: 1;
     padding: 100px 0;
 }
