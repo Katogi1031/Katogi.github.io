@@ -3,14 +3,15 @@
 
 .recruit{
     width: 70%;
-    margin: 100px auto 0 auto;
+    margin: 0 auto;
     padding-bottom: 50px;
+    padding-top: 100px;
     
-
+    
     @include mq(md){
         width: 90%;   
     }
-
+    
     &__title{
         display: flex;
         margin: 0 auto;

@@ -9,7 +9,48 @@
         width: 60%;
         margin: 0 auto;
         margin-bottom: 50px;
+        padding-top: 100px;
+
         & .main-title{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            & span:nth-child(1){
+                display: block;
+                
+                // padding-left: 15px;
+                text-align: start;
+                background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+                background: -webkit-linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 96px;
+                color: rgba(2, 101, 176, 0.302);
+                
+                @include mq(sm){
+                    font-size: 64px;
+                }
+            }
+            & span:nth-child(2){
+                display: flex;
+                align-items: center;
+                text-align: start;
+                color: #0264B0;
+                font-size: 24px;
+                &:before{
+                    content:"";
+                    width: 60px;
+                    height: 1px;
+                    background: #0264B0;
+                    margin-right: 10px;
+
+                    @include mq(sm){
+                        width: 20px;
+                    }
+                }
+            }
+
             text-align: center;
 
             & p{
@@ -138,17 +179,12 @@
             }
 
             &:before{
-                -webkit-transform: translateX(-95%) translateY(-25%) rotate(45deg);
-                transform: translateX(-95%) translateY(-25%) rotate(45deg);
-
-                @include mq(md){
-                    -webkit-transform: translateX(-87%) translateY(-25%) rotate(45deg);
-                    transform: translateX(-87%) translateY(-25%) rotate(45deg);
-                }
+                -webkit-transform: translateX(-90%) translateY(-25%) rotate(45deg);
+                transform: translateX(-90%) translateY(-25%) rotate(45deg);
 
                 @include mq(sm){
-                    -webkit-transform: translateX(-85%) translateY(-25%) rotate(45deg);
-                    transform: translateX(-85%) translateY(-25%) rotate(45deg);
+                    -webkit-transform: translateX(-90%) translateY(-25%) rotate(45deg);
+                    transform: translateX(-90%) translateY(-25%) rotate(45deg);
                 }
             }
         }

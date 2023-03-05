@@ -2,21 +2,44 @@
 @use './common' as *;
 
 .desc-contents{
+    padding-top: 100px;
     display: flex;
     justify-content: center;   
     padding-bottom: 200px; 
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
+    background-color: rgba(2, 100, 176, 0.1);
+    object-fit: cover;
 
     @include mq(md){
-        width: 80%;
+        width: 100%;
         display: block;
         margin: auto;
     }
 
     @include mq(sm){
         width: 100%;
+        padding-bottom: 100px;
     }
+
+    & span.parnas-area{
+        padding-left: 15px;
+        text-align: start;
+        background: linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+        background: -webkit-linear-gradient(90deg, rgba(65, 164, 253, 1), rgba(14, 244, 255, 1));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 96px;
+        // color: #E7E7E7;
+        color: rgba(2, 101, 176, 0.302);
+
+        @include mq(sm){
+            font-size: 64px;
+        }
+    }
+    
 
     & .content-left{
         align-items: center;
@@ -27,13 +50,16 @@
             margin-bottom: 20px;
         }
 
+        @include mq(sm){
+            text-align: center;
+        }
+
         & .main-title{
             padding-bottom: 30px;
 
             @include mq(md){
                 padding-bottom: 0;
             }
-
             &  p{
                 font-size: 28px;
                 line-height: 1.5em;
@@ -47,7 +73,7 @@
                 }
             }
 
-            & span{
+            & span.indent{
                 display: block;
 
                 @include mq(md){
@@ -55,6 +81,12 @@
                 }
                 @include mq(sm){
                     display: block;
+                }
+            }
+
+            @include mq(sm){
+                & span.remove{
+                    display: none;
                 }
             }
         }
@@ -83,6 +115,9 @@
     }
 
     & .content-right{
+        display: flex;
+        align-items: flex-end;
+
         @include mq(md){
             margin: 0 auto;
             text-align: center;
@@ -90,7 +125,7 @@
         & img{
             width: 500px;
             @include mq(md){
-                width: 100%;
+                width: 70%;
             }
             @include mq(sm){
                 width: 80%;       

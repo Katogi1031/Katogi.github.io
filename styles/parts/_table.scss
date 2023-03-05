@@ -7,10 +7,6 @@
     // タイトル
     @extend .temp-title;
 
-    @include mq(md){
-        padding-top: 0;
-    }
-
     & .title p{
         @include mq(md){
             font-size: 32px;
