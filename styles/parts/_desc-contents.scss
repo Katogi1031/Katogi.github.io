@@ -24,6 +24,11 @@
 
     & span.parnas-area{
         @extend .grad-title;
+
+        @include mq(md){
+            // width: 60%;
+            text-align: center;
+        }
     }
     
 
@@ -44,6 +49,7 @@
             padding-bottom: 30px;
 
             @include mq(md){
+                // width: 60%;
                 padding-bottom: 0;
             }
             &  p{
