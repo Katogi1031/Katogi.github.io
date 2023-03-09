@@ -1168,6 +1168,24 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.contact__text {
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .contact__text {
+    width: 80%;
+    text-align: start;
+  }
+}
+.contact__text > p {
+  font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+  .contact__text > p {
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 960px) {
   .member .title p {
