@@ -273,8 +273,22 @@ body {
 .header__li.multilingual, .header__li.multilingual a {
   font-size: 16px;
 }
+@media screen and (max-width: 600px) {
+  .header__li.multilingual, .header__li.multilingual a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+  }
+}
 .header__li.multilingual {
   color: grey;
+}
+@media screen and (max-width: 600px) {
+  .header__li.multilingual {
+    font-size: 14px;
+  }
 }
 .header__li.multilingual a:hover {
   color: red;
@@ -936,6 +950,7 @@ body {
 
 .production {
   padding-bottom: 100px;
+  line-height: 0.8em;
 }
 @media screen and (max-width: 600px) {
   .production {

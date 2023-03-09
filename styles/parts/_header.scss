@@ -107,10 +107,22 @@
     &__li {
         &.multilingual, &.multilingual a{
             font-size: 16px;
+
+            @include mq(sm){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: auto;
+            }
         }
 
         &.multilingual{
             color: grey;
+            
+            @include mq(sm){
+                font-size: 14px;
+            }
 
             & a:hover{
                 color: red;
