@@ -270,6 +270,15 @@ body {
     transform: translate(-50%, -50%);
   }
 }
+.header__li.multilingual, .header__li.multilingual a {
+  font-size: 16px;
+}
+.header__li.multilingual {
+  color: grey;
+}
+.header__li.multilingual a:hover {
+  color: red;
+}
 .header__li a {
   color: black;
   margin-bottom: 0;

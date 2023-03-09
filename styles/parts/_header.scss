@@ -104,18 +104,33 @@
         }
     }
 
-    &__li a{
-        color: black;
-        margin-bottom: 0;
-        font-size: 20px;
-        text-decoration: none;
-
-        @include mq(md){
-            width: 100%;
-            display: block;
-            text-align: center;
-            margin-bottom: 24px;
+    &__li {
+        &.multilingual, &.multilingual a{
+            font-size: 16px;
         }
+
+        &.multilingual{
+            color: grey;
+
+            & a:hover{
+                color: red;
+            }
+        }
+
+        & a{
+            color: black;
+            margin-bottom: 0;
+            font-size: 20px;
+            text-decoration: none;
+    
+            @include mq(md){
+                width: 100%;
+                display: block;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+        }
+
     }
 
     @include mq(md){

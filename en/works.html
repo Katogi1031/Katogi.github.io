@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- URL添付で表示される画像の指定 -->
+        <meta property="og:image" content="../img/logo.png">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"/>
+        
+        <!-- jQueryの読み込み -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <title>Works</title>
+
+        <!--キャッシュを無効化。毎回正しいデータを閲覧してもらう-->
+        <meta http-equiv="Cache-Control" content="no-store">
+    </head>
+    <body>
+        <div id="global-container">
+            <div class="container">
+                <!-- ヘッダーの読み込み -->
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a href="./index.html"><img src="../img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img"></a>
+                        </div>
+                
+                        <nav class="header__nav" id="js-nav">
+                            <ul class="header__ul header__items">
+                                <li class="header__li"><a href="./aboutus.html">About us</a></li>
+                                <li class="header__li"><a href="./works.html">Works</a></li>
+                                <li class="header__li"><a href="./recruit.html">Recruit</a></li>
+                                <li class="header__li"><a href="./contact.html">Contact</a></li>
+                                <li class="header__li multilingual"><a href="../index.html">JP</a> / EN</li>
+                            </ul>
+                        </nav>
+                
+                        <button class="header__hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+                <main id="content">
+                    <div class="production">
+                        <div class="production__text">
+                            <div class="title">
+                                <p>Demo Real</p>
+                            </div>
+                            <div class="attention">
+                                <p>※BGMがついています。音量にはご注意ください</p>
+                            </div>
+                        </div>
+                        <div class="production__movie">
+                            <h3>
+                                <iframe width="800" height="500" src="https://www.youtube.com/embed/_ukb9f-WFyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </h3> 
+                        </div>      
+                        <a href="./contact.html" class="btn btn-flat"><span>資料請求 / お問い合わせ</span></a>                  
+                    </div>
+                    
+                </main>
+
+                <!-- フッター -->
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="../img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="privacy-policy">
+                                <a href="./policy.html">Privacy Policy</a>
+                            </div>
+                            <p class="copy-right">&copy; 2023 Parnas inc.</p>
+                        </div>
+                        
+                        <nav class="footer__nav">
+                            <ul class="footer__ul">
+                                <li class="header__li"><a href="./aboutus.html">About us</a></li>
+                                <li class="header__li"><a href="./works.html">Works</a></li>
+                                <li class="header__li"><a href="./recruit.html">Recruit</a></li>
+                                <li class="header__li"><a href="./contact.html">Contact</a></li>
+                                <!-- <li class="header__li multilingual"><a href="">JP</a> / EN</li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="js/lib/mobile-menu.js"></script>
+    </body>
+</html>
