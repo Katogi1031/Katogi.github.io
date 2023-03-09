@@ -108,7 +108,7 @@
         &.multilingual, &.multilingual a{
             font-size: 16px;
 
-            @include mq(sm){
+            @include mq(md){
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
