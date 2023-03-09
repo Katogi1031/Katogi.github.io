@@ -9,6 +9,7 @@
     &__text{
         text-align: center;
         margin: 0 auto;
+        margin-top: 50px;
 
         @include mq(sm){
             width: 80%;

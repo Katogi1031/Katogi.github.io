@@ -1171,6 +1171,7 @@ body {
 .contact__text {
   text-align: center;
   margin: 0 auto;
+  margin-top: 50px;
 }
 @media screen and (max-width: 600px) {
   .contact__text {
