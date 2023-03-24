@@ -5,6 +5,7 @@
     margin: 0 auto;
     @extend .temp-title;
     font-family: 'Zen Kurenaido', sans-serif;
+    padding-bottom: 100px;
 
     & .title p{
         @include mq(md){

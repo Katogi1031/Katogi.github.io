@@ -1392,6 +1392,7 @@ body {
 .policy {
   margin: 0 auto;
   font-family: "Zen Kurenaido", sans-serif;
+  padding-bottom: 100px;
 }
 @media screen and (max-width: 960px) {
   .policy .title p {
