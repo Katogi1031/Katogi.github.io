@@ -110,3 +110,10 @@ body{
         text-align: center;
     }
 }
+
+// トップページのコンテンツのサイズ調整
+.top-content-wrap{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1070px;
+}

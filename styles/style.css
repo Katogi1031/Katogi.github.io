@@ -155,7 +155,7 @@ body {
   padding: 10px;
 }
 
-.grad-title, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+.grad-title, .service__description .main-title span:nth-child(1), .desc-contents .content-wrap span.parnas-area {
   display: block;
   text-align: start;
   background: linear-gradient(90deg, rgb(65, 164, 253), rgb(14, 244, 255));
@@ -167,10 +167,16 @@ body {
   color: rgba(2, 101, 176, 0.302);
 }
 @media screen and (max-width: 600px) {
-  .grad-title, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+  .grad-title, .service__description .main-title span:nth-child(1), .desc-contents .content-wrap span.parnas-area {
     font-size: 64px;
     text-align: center;
   }
+}
+
+.top-content-wrap, .top__content, .service .content-wrap, .desc-contents .content-wrap {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1070px;
 }
 
 /* モバイルメニューの実装 960px以下の場合 */
@@ -436,31 +442,32 @@ body {
 }
 
 .desc-contents {
-  padding-top: 100px;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 200px;
   width: 100%;
-  margin: 0 auto;
   background-color: rgba(2, 100, 176, 0.1);
   -o-object-fit: cover;
      object-fit: cover;
 }
+.desc-contents .content-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
 @media screen and (max-width: 960px) {
-  .desc-contents {
+  .desc-contents .content-wrap {
     width: 100%;
     display: block;
     margin: auto;
   }
 }
 @media screen and (max-width: 600px) {
-  .desc-contents {
+  .desc-contents .content-wrap {
     width: 100%;
     padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 960px) {
-  .desc-contents span.parnas-area {
+  .desc-contents .content-wrap span.parnas-area {
     text-align: center;
   }
 }
@@ -567,8 +574,6 @@ body {
   }
 }
 .service__description {
-  width: 60%;
-  margin: 0 auto;
   margin-bottom: 50px;
   padding-top: 100px;
 }
@@ -577,6 +582,11 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .service__description .main-title {
+    align-items: center;
+  }
 }
 .service__description .main-title span:nth-child(2) {
   display: flex;
@@ -616,12 +626,12 @@ body {
 }
 .service__details .feature {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: start;
   margin: 0 auto;
   margin-bottom: 100px;
-  width: 90%;
+  width: 100%;
 }
 @media screen and (max-width: 960px) {
   .service__details .feature {
@@ -747,10 +757,7 @@ body {
   /*見た目の調整*/
   color: #fff;
   text-shadow: 0 0 15px #666;
-  width: 70%;
   display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
   margin-bottom: 300px;
 }
 @media screen and (max-width: 960px) {
@@ -784,6 +791,9 @@ body {
 @media screen and (max-width: 600px) {
   .top__left .sub__title p {
     font-size: 16px;
+  }
+  .top__left .sub__title p span.indent {
+    display: block;
   }
 }
 .top__right {

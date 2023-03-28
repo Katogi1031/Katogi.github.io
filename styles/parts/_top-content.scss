@@ -11,6 +11,7 @@
     }
 
     &__content{
+        @extend .top-content-wrap;
         position:absolute;
         /*要素を天地中央寄せ*/
         top: 50%;
@@ -19,10 +20,8 @@
         /*見た目の調整*/
         color:#fff;
         text-shadow: 0 0 15px #666;
-        width: 70%;
         display: flex;
-        margin: 0 auto;
-        justify-content: space-around;
+        // justify-content: space-around;
         margin-bottom: 300px;
 
         @include mq(md){
@@ -53,7 +52,12 @@
             }
             @include mq(sm){
                 font-size: 16px;
+
+                & span.indent{
+                    display: block;
+                }
             }
+
         }
     }
     &__right{
