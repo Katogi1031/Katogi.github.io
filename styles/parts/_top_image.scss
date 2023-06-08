@@ -1,0 +1,44 @@
+@use '../globals/' as *;
+
+
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    // background-image: url('../images/tomoe_top.jpg');
+    // background-size: cover; 
+    // opacity: 0.5;
+    z-index: 1;
+    overflow: hidden;
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/tomoe_top.jpg');
+        background-size: cover;
+        opacity: 0.5;
+        z-index: -1;
+
+        @include mq(lg){
+            // width: 100%;
+            background-size: cover;
+        }
+    }
+
+    & .logo img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+        z-index: 5;
+        opacity: 1;
+    }
+}

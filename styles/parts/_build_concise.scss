@@ -1,0 +1,46 @@
+@use '../globals' as *;
+
+
+.build_concise{
+    .each_build{
+        & div{
+            // margin-left: 15px;
+            // margin: 0 5px;
+
+            @include mq(sm){
+                // margin-left: 0;
+            }
+
+            & p{
+                font-size: 24px;
+
+                @include mq(sm){
+                    font-size: 18px;
+                }
+            }
+
+        }
+
+        & .build_map{
+
+            & .account{
+                font-size: 14px;
+            }
+
+            & .google_map{
+                font-size: 8px;
+                background-color: rgba(128, 128, 128, 0.51);
+
+                & a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        & .build_info p{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@use '../globals' as *;
+
+.amenities{
+    &__detail{
+        & .amenities_icon{
+
+            & img{
+                width: 60px;
+    
+                @include mq(sm){
+                    width: 30px;
+                }
+            }
+
+            & p{
+                font-size: 16px;
+
+                @include mq(sm){
+                    font-size: 12px;
+                }
+            }
+        }
+
+        & .note{
+            @include mq(sm){
+                font-size: 14px;
+            }
+        }
+    }
+}
