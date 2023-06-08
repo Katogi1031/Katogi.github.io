@@ -182,6 +182,10 @@
         &__hamburger{
             width: 48px;
             height: 100%;
+
+            @include mq(sm){
+                width: 64px;
+            }
         }
     }
 }
