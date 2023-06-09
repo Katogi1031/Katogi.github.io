@@ -324,4 +324,42 @@
 .footer__li a {
   color: #000;
   text-decoration: none;
+}
+
+.faq__detail {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .contact__content {
+    flex-direction: column;
+  }
+}
+.contact__title {
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 15px;
+}
+@media screen and (max-width: 600px) {
+  .contact__title {
+    margin-right: 0;
+  }
+}
+.contact__icon {
+  margin-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .contact__icon {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+.contact__icon .tel {
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
