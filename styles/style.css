@@ -14,6 +14,10 @@
   font-family: "Sawarabi Mincho";
 }
 
+.booking_btn {
+  margin: auto;
+}
+
 .hamburger {
   display: none;
 }
@@ -168,6 +172,11 @@
     height: 100%;
   }
 }
+@media screen and (max-width: 960px) and (max-width: 600px) {
+  .header__hamburger {
+    width: 64px;
+  }
+}
 
 .overlay {
   position: relative;
@@ -259,4 +268,60 @@
   .amenities__detail .note {
     font-size: 14px;
   }
+}
+
+.footer {
+  height: auto;
+  background: #fff;
+}
+.footer__inner {
+  justify-content: space-between;
+}
+.footer__inner.row {
+  margin-right: 0;
+}
+.footer__inner .logo {
+  text-align: center;
+}
+.footer__inner .logo img {
+  width: 200px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .footer__inner .logo img {
+    width: 150px;
+  }
+}
+.footer__nav {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+@media screen and (max-width: 600px) {
+  .footer__nav {
+    margin-top: 50px;
+  }
+}
+.footer__ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+  display: block;
+  margin: 0;
+  align-items: center;
+  height: initial;
+}
+.footer__li {
+  padding: 5px 0;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .footer__li {
+    font-size: 12px;
+  }
+}
+.footer__li a {
+  color: #000;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

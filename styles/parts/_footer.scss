@@ -1,0 +1,66 @@
+@use '../globals/' as *;
+
+.footer{
+    height: auto;
+    background: #fff;;
+    &__inner{
+        justify-content: space-between;
+
+        // @include mq(sm){
+        //     text-align: center;
+        // }
+
+        
+
+        &.row{
+            margin-right: 0;
+        }
+        & .logo{
+            text-align: center;
+            & img{
+                width: 200px;
+                height: auto;
+
+                @include mq(sm){
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    &__nav{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+
+        @include mq(sm){
+            margin-top: 50px;
+        }
+    }
+
+    &__ul{
+        list-style: none;
+        padding-left: 0;
+        width: 100%;
+        display: block;
+        margin: 0;
+        align-items: center;
+        height: initial;
+        // justify-content: ;
+    }
+
+    &__li{
+        padding: 5px 0;
+        font-size: 14px;
+
+        @include mq(sm){
+            font-size: 12px;
+        }
+
+        & a{
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}

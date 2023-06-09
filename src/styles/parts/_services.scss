@@ -1,0 +1,191 @@
+@use '../globals' as *;
+@use './common' as *;
+
+.service{
+    @include mq(sm){
+        margin: 0 auto;
+    }
+    & .content-wrap{
+        @extend .top-content-wrap;
+    }
+    &__description{
+        // width: 60%;
+        margin-bottom: 50px;
+        padding-top: 100px;
+        
+
+        & .main-title{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+            @include mq(md){
+                align-items: center;
+            }
+            & span:nth-child(1){
+                @extend .grad-title;
+            }
+            & span:nth-child(2){
+                display: flex;
+                align-items: center;
+                text-align: start;
+                color: #0264B0;
+                font-size: 24px;
+
+                &:before{
+                    content:"";
+                    width: 60px;
+                    height: 1px;
+                    background: #0264B0;
+                    margin-right: 10px;
+
+                    @include mq(sm){
+                        width: 20px;
+                    }
+                }
+            }
+
+            text-align: center;
+
+            & p{
+                font-size: 32px;
+
+                @include mq(sm){
+                    font-size: 28px;
+                }
+
+                & .remove{
+                    @include mq(sm){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &__details{
+        text-align: center;
+        padding-bottom: 100px;
+        & .feature{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: start;
+            margin: 0 auto;
+            margin-bottom: 100px;
+            width: 100%;
+
+            @include mq(md){
+                padding-bottom: 50px;
+            }
+
+            @include mq(sm){
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+
+            &__text{
+                width: 40%;
+                margin-right: 100px;
+
+                @include mq(md){
+                    margin-right: 50px;
+                }
+
+                @include mq(sm){
+                    width: 90%;
+                    margin-right: 0;
+                    margin: 0 auto;
+                }
+
+                & .title p{
+                    font-size: 24px;
+
+                    @include mq(sm){
+                        font-size: 20px;
+                    }
+                }
+
+                & .description{
+                    @include mq(sm){
+                        margin: 0 auto;
+                        text-align: start;
+                    }
+                    p{
+                        font-size: 20px;
+
+                        @include mq(sm){
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            &__image{
+                // justify-content: center;
+                // text-align: center;
+                & img{
+                    width: 400px;
+                    height: 400px;
+                    object-fit: cover;
+                    
+                    @include mq(md){
+                        width: 300px;
+                        height: 300px;
+                    }
+    
+                    @include mq(sm){
+                        width: 80%;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+    
+                }
+                
+            } 
+            
+            &.reverse{
+                flex-direction: row-reverse;
+                & .feature__text{
+                    margin-right: 0;
+
+                    @include mq(sm){
+                        margin: 0 auto;
+                    }
+                }
+
+                & .feature__image{
+                    margin-right: 100px;
+
+                    @include mq(md){
+                        margin-right: 50px;
+                    }
+
+                    @include mq(sm){
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        & .overhang-flat{
+            @extend .btn-lg;
+
+            @include mq(sm){
+                margin-top: 0;
+                font-size: 16px;       
+            }
+
+            &:before{
+                -webkit-transform: translateX(-90%) translateY(-25%) rotate(45deg);
+                transform: translateX(-90%) translateY(-25%) rotate(45deg);
+
+                @include mq(sm){
+                    -webkit-transform: translateX(-90%) translateY(-25%) rotate(45deg);
+                    transform: translateX(-90%) translateY(-25%) rotate(45deg);
+                }
+            }
+        }
+    }
+}
