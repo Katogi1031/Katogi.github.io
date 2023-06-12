@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container-fluid {
   padding: 0;
-  background-color: #EFEBDC;
+  background-color: #F9F2ED;
 }
 
 .row > * {
@@ -60,8 +60,10 @@
 
 .header {
   width: 100%;
+  height: 80ox;
   position: fixed;
   z-index: 9999;
+  background-color: rgb(255, 255, 255);
   padding: 15px 4% 10px;
   top: 0;
   left: 0;
@@ -362,4 +364,72 @@
 }
 .contact__icon .tel {
   margin-top: 10px;
+}
+
+#sticky_header {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+@media screen and (max-width: 960px) {
+  #sticky_header {
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
+#sticky_header #sticky_nav.fixed {
+  top: 80px;
+  position: fixed;
+  padding-top: 20px;
+}
+#sticky_header #sticky_nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#sticky_header #sticky_nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 600px) {
+  #sticky_header #sticky_nav ul li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}
+
+/* 002 */
+.button002 a {
+  background: #F5DF99;
+  border-radius: 3px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 220px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.button002 a:before {
+  position: relative;
+  font-weight: 900;
+  margin-right: 8px;
+  color: #999;
+}
+
+.button002 a:hover {
+  background: rgb(240, 212, 250);
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
