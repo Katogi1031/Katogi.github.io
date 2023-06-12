@@ -8,7 +8,7 @@ function PositionCheck(){
   var headerH = $("#header").outerHeight(true);
     //.scroll-pointというクラス名がついたエリアの位置を取得する設定
   $(".scroll-point").each(function(i) {//.scroll-pointクラスがついたエリアからトップまでの距離を計算して設定
-    elemTop[i] =Math.round(parseInt($(this).offset().top-headerH));//追従するheader分の高さ（70px）を引き小数点を四捨五入
+    elemTop[i] = Math.round(parseInt($(this).offset().top-headerH));//追従するheader分の高さ（70px）を引き小数点を四捨五入
   });
 }
 
