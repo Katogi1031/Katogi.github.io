@@ -1,5 +1,4 @@
 @use './parts/common' as *;
-@use './parts/header' as *;
 @use './parts/top_image' as *;
 @use './parts/news' as *;
 @use './parts/build_concise' as *;
@@ -9,3 +8,4 @@
 @use './parts/sticky_header' as *;
 @use './parts/staff' as *;
 
+@use './parts/header' as *;
