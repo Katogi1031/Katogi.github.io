@@ -317,6 +317,26 @@
   margin: 20px;
 }
 
+.access {
+  height: auto;
+}
+.access__map img {
+  width: 800px;
+  height: auto;
+}
+@media screen and (max-width: 960px) {
+  .access__map img {
+    width: 500px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .access__map img {
+    width: 320px;
+    height: auto;
+  }
+}
+
 .hamburger {
   display: none;
 }

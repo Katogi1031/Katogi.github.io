@@ -1,0 +1,25 @@
+@use '../globals/' as *;
+
+
+.access{
+    // width: 100%;
+    height: auto;
+
+    &__map{
+        & img{
+            width: 800px;
+            height: auto;
+
+            @include mq(md){
+                width: 500px;
+                height: auto;
+            }
+
+            @include mq(sm){
+                width: 320px;
+                height: auto;
+            }
+        }
+    }
+
+}
