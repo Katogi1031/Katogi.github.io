@@ -82,15 +82,34 @@
                 </header>
 
                 <!-- booking -->
-                <div class="container" style="padding: 100px 0;">
-                    <div class="row text-center">
+                <div class="container mb-5">
+                    <div class="row text-center" style="padding: 50px 0 0;">
                         <h3>ご予約</h3>
-                        <p class="mt-3">ご希望のお部屋の数を選択した後に、人数を入力することで予約することができます</p>
+                        <!-- <p class="mt-3">ご希望のお部屋の数を選択した後に、人数を入力することで予約することができます</p> -->
                     </div>
-                    <div class="row">
-                        <div class="text-center">
-                            <iframe src ="https://beds24.com/booking2.php?propid=87452&amp;referer=iframe" width="800" height="2000" style="max-width:100%;border:none;overflow:auto;"><p><a href="https://beds24.com/booking2.php?propid=87452&amp;referer=iframe" title="Book Now">Book Now</a></p></iframe>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-10 col-md-10 col-lg-7 text-center mt-5">
+                            <h4>1号棟</h4>
+                            <!-- bookingWidget requires jQuery and jQueryUI -->
+                            <!-- Include the following line ONCE ONLY on the page, preferably in the document head -->
+                            <script src='https://media.xmlcal.com/widget/1.00/js/bookWidget.min.js'></script>
+
+                            <!-- Place this div on your page where you want the widget to show -->
+                            <div id='bookWidget-49573-87452-201018-1687667780'> </div>
+
+                            <!-- The following will initialize the widget in the above div -->
+                            <script>
+                            jQuery(document).ready(function() {
+                                jQuery('#bookWidget-49573-87452-201018-1687667780').bookWidget({
+                                    roomid:201018,
+                                    formAction:'https://beds24.com/booking.php',
+                                    widgetLang:'ja',
+                                    widgetType:'AvailabilityCalendar'
+                                });
+                            });
+                            </script>
                         </div>
+
                     </div>
 
                 </div>
