@@ -43,17 +43,34 @@
     background-size: cover;
   }
 }
-.overlay .logo img {
+.overlay .logo p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 300px;
+  font-size: 40px;
+  width: auto;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 5;
   opacity: 1;
+}
+@media screen and (max-width: 960px) {
+  .overlay .logo p span {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .overlay .logo p {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .overlay .logo p span {
+    display: inline;
+  }
 }
 
 .news-article p {

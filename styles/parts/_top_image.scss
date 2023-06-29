@@ -30,16 +30,34 @@
         }
     }
 
-    & .logo img{
+    & .logo p{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        font-size: 40px;
 
-        width: 300px;
+        width: auto;
         height: auto;
         object-fit: cover;
         z-index: 5;
         opacity: 1;
+
+        @include mq(md){
+            & span{
+                display: block;
+            }
+        }
+
+        @include mq(sm){
+            font-size: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            & span{
+                display: inline;
+            }
+        }
     }
 }
