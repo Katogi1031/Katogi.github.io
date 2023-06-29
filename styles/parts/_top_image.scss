@@ -31,13 +31,14 @@
     }
 
     & .logo p{
+        // background-color: #fff;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 80%;
+        left: 100%;
         transform: translate(-50%, -50%);
         font-size: 40px;
 
-        width: auto;
+        width: 100%;
         height: auto;
         object-fit: cover;
         z-index: 5;
@@ -50,13 +51,14 @@
         }
 
         @include mq(sm){
-            font-size: 20px;
+            left: 80%;
+            font-size: 28px;
             width: 100%;
-            display: flex;
-            justify-content: center;
+            // display: flex;
+            // justify-content: center;
 
             & span{
-                display: inline;
+                display: block;
             }
         }
     }
