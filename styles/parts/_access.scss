@@ -2,16 +2,18 @@
 
 
 .access{
-    // width: 100%;
+    width: 100%;
     height: auto;
 
     &__map{
         & img{
-            width: 800px;
+            width: 700px;
+            max-width: 100%;
             height: auto;
+            object-fit: contain;
 
             @include mq(md){
-                width: 700px;
+                width: 600px;
                 height: auto;
             }
 

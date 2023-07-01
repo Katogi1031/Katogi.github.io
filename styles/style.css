@@ -295,14 +295,16 @@
   height: auto;
   margin: 0;
 }
-.staff__img {
-  width: 100%;
-}
 .staff__img img {
   width: 700px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 960px) {
+  .staff__img img {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 600px) {
   .staff__img img {
@@ -318,7 +320,7 @@
 }
 @media screen and (max-width: 960px) {
   .staff__text {
-    top: 600px;
+    top: 450px;
     right: 0px;
     font-size: 14px;
   }
@@ -335,15 +337,19 @@
 }
 
 .access {
+  width: 100%;
   height: auto;
 }
 .access__map img {
-  width: 800px;
+  width: 700px;
+  max-width: 100%;
   height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 960px) {
   .access__map img {
-    width: 700px;
+    width: 600px;
     height: auto;
   }
 }

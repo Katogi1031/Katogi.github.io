@@ -8,11 +8,15 @@
     margin: 0;
 
     &__img{
-        width: 100%;
+        // width: 100%;
         & img{
             width: 700px;
             height: auto;
             object-fit: cover;
+
+            @include mq(md){
+                width: 500px;
+            }
     
             @include mq(sm){
                 width: 300px;
@@ -28,7 +32,7 @@
         background: #fff;
 
         @include mq(md){
-            top: 600px;
+            top: 450px;
             right: 0px;
             font-size: 14px;
         }
