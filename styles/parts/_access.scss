@@ -1,11 +1,14 @@
 @use '../globals/' as *;
 
+.row{
+    margin-right: 0;
+}
 
 .access{
     width: 100%;
     height: auto;
 
-    &__map{
+    &  &__map{
         & img{
             width: 700px;
             max-width: 100%;
@@ -24,4 +27,4 @@
         }
     }
 
-}
+    }

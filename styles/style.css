@@ -336,11 +336,15 @@
   margin: 20px;
 }
 
+.row {
+  margin-right: 0;
+}
+
 .access {
   width: 100%;
   height: auto;
 }
-.access__map img {
+.access .access__map img {
   width: 700px;
   max-width: 100%;
   height: auto;
@@ -348,13 +352,13 @@
      object-fit: contain;
 }
 @media screen and (max-width: 960px) {
-  .access__map img {
+  .access .access__map img {
     width: 600px;
     height: auto;
   }
 }
 @media screen and (max-width: 600px) {
-  .access__map img {
+  .access .access__map img {
     width: 370px;
     height: auto;
   }
