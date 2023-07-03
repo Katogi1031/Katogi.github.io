@@ -396,6 +396,24 @@
     height: auto;
   }
 }
+.access .build_address .build_name {
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+}
+.access .build_address .build_name .address_info {
+  display: flex;
+}
+.access .build_address p {
+  margin-bottom: 5px;
+}
+.access .build_address span {
+  margin-left: 15px;
+}
+.access .build_address a {
+  font-size: 14px;
+  text-decoration: none;
+}
 
 .hamburger {
   display: none;
