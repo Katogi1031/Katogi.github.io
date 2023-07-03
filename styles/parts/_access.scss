@@ -29,7 +29,7 @@
 
     & .required_time{
         @include mq(md){
-            padding-top: 50px;
+            padding-top: 20px;
         }
         & div > p{
             @include mq(sm){
@@ -75,9 +75,14 @@
             font-family: 'umemincho', serif;
             display: flex;
             font-size: 14px;
+            margin-bottom: 5px;
             & p{
                 padding: 5px;
                 margin-bottom: 5px;
+
+                @include mq(sm){
+                    padding: 1px;
+                }
             }
         }
         
