@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "chogokubosogothic";
+  src: url("../../fonts/chogokubosogothic/chogokubosogothic_5.ttf") format(truetype);
+}
+@font-face {
+  font-family: "umemincho";
+  src: url("../../fonts/umemincyo/ume-tmo3.ttf") format(truetype);
+}
 .container-fluid {
   padding: 0;
   background-color: #F9F2ED;
@@ -18,6 +26,22 @@
   margin: auto;
 }
 
+@font-face {
+  font-family: "MakibaFont13";
+  src: url("../../fonts/MakibaFont13/MakibaFont13.ttf") format("truetype");
+}
+@font-face {
+  font-family: "mushin";
+  src: url("../../fonts/MODI_mushin_2021_1104/mushin.otf") format("truetype");
+}
+@font-face {
+  font-family: "craftmincho";
+  src: url("../../fonts/craftmincho/craftmincho.otf") format("truetype");
+}
+@font-face {
+  font-family: "riitf";
+  src: url("../../fonts/riitf/RiiT_F.otf") format("truetype");
+}
 .overlay {
   position: relative;
   width: 100%;
@@ -44,17 +68,17 @@
   }
 }
 .overlay .logo p {
+  background: #fff;
   position: absolute;
-  top: 80%;
-  left: 100%;
-  transform: translate(-50%, -50%);
+  bottom: 38px;
+  left: 100px;
   font-size: 40px;
-  width: 100%;
+  margin: 10px;
+  padding: 5px;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
   z-index: 5;
   opacity: 1;
+  font-family: "riitf", serif;
 }
 @media screen and (max-width: 960px) {
   .overlay .logo p span {
@@ -63,13 +87,18 @@
 }
 @media screen and (max-width: 600px) {
   .overlay .logo p {
-    left: 80%;
-    font-size: 28px;
-    width: 100%;
+    font-size: 24px;
+    bottom: 50px;
   }
   .overlay .logo p span {
     display: block;
   }
+}
+.overlay .logo p::-moz-selection {
+  background-color: #fff;
+}
+.overlay .logo p::selection {
+  background-color: #fff;
 }
 
 .news-article p {
@@ -114,12 +143,16 @@
   }
 }
 .amenities__detail .amenities_icon p {
+  font-family: "umemincho", "wf-sawarabimincho", serif;
   font-size: 16px;
 }
 @media screen and (max-width: 600px) {
   .amenities__detail .amenities_icon p {
     font-size: 12px;
   }
+}
+.amenities__detail .note {
+  font-family: "umemincho", serif;
 }
 @media screen and (max-width: 600px) {
   .amenities__detail .note {

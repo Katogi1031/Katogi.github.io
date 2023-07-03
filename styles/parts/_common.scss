@@ -1,5 +1,14 @@
 @use '../globals/' as *;
 
+@font-face{
+    font-family: 'chogokubosogothic';
+    src: url('../../fonts/chogokubosogothic/chogokubosogothic_5.ttf') format(truetype);
+}
+@font-face{
+    font-family: 'umemincho';
+    src: url('../../fonts/umemincyo/ume-tmo3.ttf') format(truetype);
+}
+
 .container-fluid{
     padding: 0;
     background-color: #F9F2ED;

@@ -13,6 +13,7 @@
             }
 
             & p{
+                font-family: 'umemincho', 'wf-sawarabimincho', serif;
                 font-size: 16px;
 
                 @include mq(sm){
@@ -22,6 +23,7 @@
         }
 
         & .note{
+            font-family: 'umemincho', serif;
             @include mq(sm){
                 font-size: 14px;
             }
