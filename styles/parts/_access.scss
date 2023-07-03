@@ -34,22 +34,21 @@
             margin-bottom: 10px;
             font-size: 20px;
             // border-bottom: 1px dashed black;
-            display: flex;
+            display: inline-block;
             
             & .address_info{
-                display: flex;
+                display: inline;
+                // display: flex;
+                & p{
+                    margin-bottom: 5px;
+                }
             }
-        }
-        & p{
-            margin-bottom: 5px;
-        }
-        & span{
-            margin-left: 15px;
-        }
-
-        & a{
-            font-size: 14px;
-            text-decoration: none;
+            
+            & .google_map{
+                display: inline;
+                font-size: 14px;
+                text-decoration: none;
+            }
         }
     }
 }
