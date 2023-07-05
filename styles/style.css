@@ -17,11 +17,11 @@
 }
 @font-face {
   font-family: "craftmincho";
-  src: url("../../fonts/craftmincho/craftmincho.otf") format("truetype");
+  src: url("../../fonts/craftmincho/craftmincho.otf") format(truetype);
 }
 @font-face {
   font-family: "riitf";
-  src: url("../../fonts/riitf/RiiT_F.otf") format("truetype");
+  src: url("../../fonts/riit_f.otf") format("truetype");
 }
 .container-fluid {
   padding: 0;
