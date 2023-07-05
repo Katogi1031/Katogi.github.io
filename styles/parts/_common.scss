@@ -28,6 +28,18 @@
     font-family: 'riitf';
     src: url('../../fonts/riit_f.otf') format(truetype);
 }
+@font-face{
+    font-family: 'karakaze';
+    src: url('../../fonts/karakaze_font/karakaze-R.ttf') format(truetype);
+}
+@font-face{
+    font-family: 'karakaze2';
+    src: url('../../fonts/karakaze_font2/karakaze-R.otf') format(truetype);
+}
+@font-face{
+    font-family: 'yosugara';
+    src: url('../../fonts/yosugara/yosugara1.1.ttf') format(truetype);
+}
 
 .container-fluid{
     padding: 0;

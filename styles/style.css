@@ -1,33 +1,39 @@
 @charset "UTF-8";
 @font-face {
   font-family: "chogokubosogothic";
-  src: url("../fonts/chogokubosogothic/chogokubosogothic_5.ttf") format(truetype);
-  /* src: url("../../fonts/chogokubosogothic/chogokubosogothic_5.ttf") format(truetype); */
+  src: url("../../fonts/chogokubosogothic/chogokubosogothic_5.ttf") format(truetype);
 }
 @font-face {
   font-family: "umemincho";
-  src: url("../fonts/umemincyo/ume-tmo3.ttf") format(truetype);
-  /* src: url("../../fonts/umemincyo/ume-tmo3.ttf") format(truetype); */
+  src: url("../../fonts/umemincyo/ume-tmo3.ttf") format(truetype);
 }
 @font-face {
   font-family: "MakibaFont13";
-  src: url("../fonts/MakibaFont13/MakibaFont13.ttf") format(truetype);
-  /* src: url("../../fonts/MakibaFont13/MakibaFont13.ttf") format(truetype); */
+  src: url("../../fonts/MakibaFont13/MakibaFont13.ttf") format(truetype);
 }
 @font-face {
   font-family: "mushin";
-  src: url("../fonts/MODI_mushin_2021_1104/mushin.otf") format(truetype);
-  /* src: url("../../fonts/MODI_mushin_2021_1104/mushin.otf") format(truetype); */
+  src: url("../../fonts/MODI_mushin_2021_1104/mushin.otf") format(truetype);
 }
 @font-face {
   font-family: "craftmincho";
-  src: url("../fonts/craftmincho/craftmincho.otf") format(truetype);
-  /* src: url("../../fonts/craftmincho/craftmincho.otf") format(truetype); */
+  src: url("../../fonts/craftmincho/craftmincho.otf") format(truetype);
 }
 @font-face {
   font-family: "riitf";
-  src: url("../fonts/riit_f.otf") format(truetype);
-  /* src: url("../../fonts/riit_f.otf") format(truetype); */
+  src: url("../../fonts/riit_f.otf") format(truetype);
+}
+@font-face {
+  font-family: "karakaze";
+  src: url("../../fonts/karakaze_font/karakaze-R.ttf") format(truetype);
+}
+@font-face {
+  font-family: "karakaze2";
+  src: url("../../fonts/karakaze_font2/karakaze-R.otf") format(truetype);
+}
+@font-face {
+  font-family: "yosugara";
+  src: url("../../fonts/yosugara/yosugara1.1.ttf") format(truetype);
 }
 .container-fluid {
   padding: 0;
@@ -80,11 +86,11 @@
   left: 100px;
   font-size: 40px;
   margin: 10px;
-  padding: 5px;
+  padding: 5px 10px;
   height: auto;
   z-index: 5;
   opacity: 1;
-  font-family: "riitf", serif;
+  font-family: "karakaze", serif;
 }
 @media screen and (max-width: 960px) {
   .overlay .logo p span {
