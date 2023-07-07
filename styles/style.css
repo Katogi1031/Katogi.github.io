@@ -361,7 +361,8 @@
   position: absolute;
   top: 500px;
   right: 0;
-  background: #fff;
+  background: #ffe9fe;
+  border-radius: 15px;
 }
 @media screen and (max-width: 960px) {
   .staff__text {

@@ -29,7 +29,8 @@
         position: absolute;
         top: 500px;
         right: 0;
-        background: #fff;
+        background: #ffe9fe;
+        border-radius: 15px;
 
         @include mq(md){
             top: 450px;
