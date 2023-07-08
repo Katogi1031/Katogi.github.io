@@ -2,10 +2,6 @@
 
 .staff{
 
-    & .reverse{
-        display: flex;
-
-    }
 
     padding-top: 200px;
     &__profile{
@@ -96,11 +92,12 @@
 }
 
 .staff{
-
     & .reverse{
-        display: flex;
-
+        @include mq(sm){
+            display: flex;
+        }
     }
+
 
     padding-top: 200px;
     &2__profile{
@@ -180,7 +177,7 @@
             border-radius: 5%;
             
             @include mq(md){
-                margin-top: 30px;
+                margin-bottom: 30px;
             }
         }
 

@@ -683,9 +683,6 @@
 .staff {
   padding-top: 200px;
 }
-.staff .reverse {
-  display: flex;
-}
 .staff__profile {
   font-size: 15px;
   width: 100%;
@@ -775,8 +772,10 @@
 .staff {
   padding-top: 200px;
 }
-.staff .reverse {
-  display: flex;
+@media screen and (max-width: 600px) {
+  .staff .reverse {
+    display: flex;
+  }
 }
 .staff2__profile {
   font-size: 15px;
@@ -855,7 +854,7 @@
 }
 @media screen and (max-width: 960px) {
   .staff2__image img {
-    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 600px) {
