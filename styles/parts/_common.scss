@@ -1,9 +1,15 @@
 @use '../globals/' as *;
 
 // fontの設定
+
+
 @font-face{
     font-family: 'chogokubosogothic';
     src: url('../../fonts/chogokubosogothic/chogokubosogothic_5.ttf') format(truetype);
+}
+@font-face{
+    font-family: 'huiFonts';
+    src: url('../../fonts/HuiFont29/HuiFont29.ttf') format(truetype);
 }
 @font-face{
     font-family: 'umemincho';
@@ -46,6 +52,8 @@
     background-color: #ffffff;
     // background-color: #F9F2ED;
     // background-color: #EFEBDC;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 .row > *{

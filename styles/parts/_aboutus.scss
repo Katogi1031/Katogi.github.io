@@ -1,55 +1,5 @@
 @use '../globals/' as *;
 
-// .staff{
-//     // margin: auto;
-//     &__profile{
-//         padding: 0 30px 88px;
-//         max-width: 1082px;
-//         font-size: 15px;
-//         width: auto;
-//         & table {
-//             tr{
-//                 // width: 600px;
-//                 height: auto;
-//                 @media screen and (min-width: 768px) {
-//                     padding: 17px 0;
-//                 }
-//                 display: block;
-//                 padding: 10px 0;
-//                 border-bottom: 1px solid #cfcfcf;
-
-//                 &:first-of-type{
-//                     border-top: 1px solid #cfcfcf;
-//                 }
-
-//                 & td{
-//                     padding: 8px 0 10px 17px;
-//                     line-height: 1.8;
-//                     letter-spacing: .1em;
-
-//                     @media screen and (min-width: 768px) {
-//                         padding-left: 32px;
-//                     }
-//                 }
-
-//                 & td:first-child{
-//                     width: 200px;
-//                     padding: 8px 0 10px;
-//                     border-right: 1px solid #cfcfcf;
-//                 }
-//             }
-//         }
-//     }
-
-//     &__image {
-//         padding-left: 100px;
-//         img{
-//             width: 300px;
-//             height: auto;
-//             border-radius: 5%;
-//         }
-//     }
-// }
 .staff{
     padding-top: 200px;
     &__profile{
@@ -107,7 +57,7 @@
                 }
 
                 & td:nth-child(2){
-                    padding-right: 100px;
+                    padding-right: 50px;
 
                     @include mq(md){
                         padding-right: 0;
@@ -122,10 +72,15 @@
         margin: 0 auto;
         img{
             // width: 300px;
+            max-height: 300px;
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 5%;
+            
+            @include mq(md){
+                margin-top: 30px;
+            }
         }
 
         @include mq(sm){

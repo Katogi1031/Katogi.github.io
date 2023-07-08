@@ -4,6 +4,10 @@
   src: url("../../fonts/chogokubosogothic/chogokubosogothic_5.ttf") format(truetype);
 }
 @font-face {
+  font-family: "huiFonts";
+  src: url("../../fonts/HuiFont29/HuiFont29.ttf") format(truetype);
+}
+@font-face {
   font-family: "umemincho";
   src: url("../../fonts/umemincyo/ume-tmo3.ttf") format(truetype);
 }
@@ -38,6 +42,8 @@
 .container-fluid {
   padding: 0;
   background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
 }
 
 .row > * {
@@ -90,7 +96,8 @@
   height: auto;
   z-index: 5;
   opacity: 1;
-  font-family: "karakaze", serif;
+  font-family: "huiFonts", sans-serif;
+  font-style: normal;
 }
 @media screen and (max-width: 960px) {
   .overlay .logo p span {
@@ -122,6 +129,11 @@
   }
 }
 
+.build_concise {
+  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: bold;
+}
 .build_concise .each_build div p {
   font-size: 24px;
 }
@@ -728,7 +740,7 @@
   }
 }
 .staff__profile table tr td:nth-child(2) {
-  padding-right: 100px;
+  padding-right: 50px;
 }
 @media screen and (max-width: 960px) {
   .staff__profile table tr td:nth-child(2) {
@@ -739,11 +751,17 @@
   margin: 0 auto;
 }
 .staff__image img {
+  max-height: 300px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5%;
+}
+@media screen and (max-width: 960px) {
+  .staff__image img {
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 600px) {
   .staff__image {
