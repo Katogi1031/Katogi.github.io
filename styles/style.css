@@ -174,7 +174,7 @@
 
 .footer {
   height: auto;
-  background: #fff;
+  background: #ffe9fe;
 }
 .footer__inner {
   justify-content: space-between;
@@ -341,6 +341,7 @@
   margin: 0;
 }
 .staff__img img {
+  border-radius: 15px;
   width: 700px;
   height: auto;
   -o-object-fit: cover;
