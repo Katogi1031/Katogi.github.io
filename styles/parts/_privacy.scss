@@ -1,0 +1,16 @@
+@use '../globals/' as *;
+
+.privacy_policy{
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+
+    & .paragraph{
+        margin-bottom: 50px;
+        font-size: 15px;
+
+        & .text{
+            line-height: 1.8rem;
+        }
+    }
+}

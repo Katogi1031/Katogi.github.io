@@ -928,4 +928,16 @@
   .company__profile table tr td:nth-child(2) {
     padding-right: 0;
   }
+}
+
+.privacy_policy {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.privacy_policy .paragraph {
+  margin-bottom: 50px;
+  font-size: 15px;
+}
+.privacy_policy .paragraph .text {
+  line-height: 1.8rem;
 }/*# sourceMappingURL=style.css.map */
