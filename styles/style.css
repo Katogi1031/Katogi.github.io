@@ -859,4 +859,13 @@
 }
 .privacy_policy .paragraph .text {
   line-height: 1.8rem;
+}
+
+.book {
+  padding: 100px 0 50px;
+}
+@media screen and (max-width: 600px) {
+  .book {
+    padding: 50px 0 0;
+  }
 }/*# sourceMappingURL=style.css.map */
