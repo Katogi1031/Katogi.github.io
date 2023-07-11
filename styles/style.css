@@ -86,7 +86,7 @@
   }
 }
 .overlay .logo p {
-  background: #fff;
+  background: rgb(252, 252, 238);
   position: absolute;
   bottom: 38px;
   left: 100px;
@@ -186,7 +186,7 @@
 
 .footer {
   height: auto;
-  background: #ffe9fe;
+  background: rgba(253, 236, 252, 0.4588235294);
 }
 .footer__inner {
   justify-content: space-between;
