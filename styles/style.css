@@ -107,7 +107,7 @@
 @media screen and (max-width: 600px) {
   .overlay .logo p {
     font-size: 24px;
-    bottom: 50px;
+    bottom: 100px;
   }
   .overlay .logo p span {
     display: block;
