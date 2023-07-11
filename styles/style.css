@@ -674,101 +674,22 @@
   }
 }
 
-.staff {
-  padding-top: 200px;
-}
-.staff__profile {
-  font-size: 15px;
-  width: 100%;
-}
-@media screen and (max-width: 600px) {
-  .staff__profile {
-    width: auto;
-  }
-}
-.staff__profile table {
-  margin: auto;
-}
-.staff__profile table tr {
-  display: block;
-  padding: 10px 0;
-  border-bottom: 1px solid #cfcfcf;
-}
-@media screen and (min-width: 768px) {
-  .staff__profile table tr {
-    padding: 17px 0;
-  }
-}
-.staff__profile table tr:first-of-type {
-  border-top: 1px solid #cfcfcf;
-}
-.staff__profile table tr td {
-  padding: 8px 0 10px 17px;
-  line-height: 1.8;
-  letter-spacing: 0.1em;
-}
-@media screen and (min-width: 768px) {
-  .staff__profile table tr td {
-    padding-left: 32px;
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .staff__profile table tr td {
-    font-size: 12px;
-  }
-}
-.staff__profile table tr td:first-child {
-  width: 100px;
-  padding: 8px 0 10px;
-  border-right: 1px solid #cfcfcf;
-}
-@media screen and (min-width: 768px) {
-  .staff__profile table tr td:first-child {
-    width: 146px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .staff__profile table tr td:first-child {
-    width: 100px;
-  }
-}
-.staff__profile table tr td:nth-child(2) {
-  padding-right: 50px;
-}
-@media screen and (max-width: 960px) {
-  .staff__profile table tr td:nth-child(2) {
-    padding-right: 0;
-  }
-}
-.staff__image {
-  margin: 0 auto;
-}
-.staff__image img {
-  max-height: 300px;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 5%;
-}
-@media screen and (max-width: 960px) {
-  .staff__image img {
-    margin-top: 30px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .staff__image {
-    padding-left: 0;
-  }
-}
-
-.staff {
-  padding-top: 200px;
-}
 @media screen and (max-width: 600px) {
   .staff .reverse {
     display: flex;
+  }
+}
+.staff > .row {
+  padding-top: 100px;
+}
+@media screen and (max-width: 600px) {
+  .staff > .row {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .staff {
+    padding-top: 50px;
   }
 }
 .staff2__profile {
@@ -837,6 +758,7 @@
 }
 .staff2__image {
   margin: 0 auto;
+  padding-right: 50px;
 }
 .staff2__image img {
   max-height: 300px;
@@ -844,6 +766,8 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   border-radius: 5%;
 }
 @media screen and (max-width: 960px) {
@@ -853,7 +777,8 @@
 }
 @media screen and (max-width: 600px) {
   .staff2__image {
-    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
   }
 }
 
