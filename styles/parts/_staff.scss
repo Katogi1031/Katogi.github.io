@@ -1,11 +1,12 @@
 @use '../globals/' as *;
 
 
-.staff{
+.top_staff{
     position: relative;
     width: 100%;
     height: auto;
     margin: 0;
+    padding: 100px 0;
 
     &__img{
         // width: 100%;
@@ -28,13 +29,13 @@
 
     &__text{
         position: absolute;
-        top: 700px;
-        right: 0;
+        top: 500px;
+        right: 100px;
         background: #ffe9fe;
         border-radius: 15px;
 
         @include mq(md){
-            top: 660px;
+            top: 460px;
             right: 0px;
             font-size: 14px;
         }
@@ -48,5 +49,9 @@
         & p{
             margin: 20px;
         }
+    }
+
+    &__btn{
+        padding-top: 100px;
     }
 }
