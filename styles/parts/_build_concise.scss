@@ -24,6 +24,12 @@
 
         }
 
+        & .build_name{
+            @include mq(sm){
+                text-align: center;
+            }
+        }
+
         & .build_map{
 
             & .account{

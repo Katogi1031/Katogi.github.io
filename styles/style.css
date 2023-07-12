@@ -145,6 +145,11 @@
     font-size: 18px;
   }
 }
+@media screen and (max-width: 600px) {
+  .build_concise .each_build .build_name {
+    text-align: center;
+  }
+}
 .build_concise .each_build .build_map .account {
   font-size: 14px;
 }
