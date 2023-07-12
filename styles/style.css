@@ -891,6 +891,7 @@
 
 .build {
   padding-top: 100px;
+  padding-bottom: 200px;
 }
 .build__info {
   padding-left: 30px;
