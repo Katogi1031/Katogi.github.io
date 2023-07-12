@@ -35,7 +35,7 @@
         // -webkit-background-clip: content-box; /* Safari/Chrome用のプレフィックス */
         // color: transparent;
         position: absolute;
-        bottom: 38px;
+        bottom: 10%;
         left: 100px;
         // transform: translate(-50%, -50%);
         font-size: 40px;
@@ -58,6 +58,7 @@
 
 
         @include mq(md){
+            bottom: 20%;
             & span{
                 display: block;
             }
@@ -66,7 +67,8 @@
         @include mq(sm){
             // left: 80%;
             font-size: 24px;
-            bottom: 100px;
+            bottom: 40%;
+            // top: ;
             // width: 100%;
             // display: flex;
             // justify-content: center;

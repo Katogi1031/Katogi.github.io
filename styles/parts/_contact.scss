@@ -4,6 +4,10 @@
     &__detail{
         display: flex;
         justify-content: center;
+        
+        & p{
+             line-height: 1.5rem;
+        }
     }
 }
 

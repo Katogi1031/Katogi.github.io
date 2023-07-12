@@ -88,7 +88,7 @@
 .overlay .logo p {
   background: rgb(252, 252, 238);
   position: absolute;
-  bottom: 38px;
+  bottom: 10%;
   left: 100px;
   font-size: 40px;
   margin: 10px;
@@ -100,6 +100,9 @@
   font-style: normal;
 }
 @media screen and (max-width: 960px) {
+  .overlay .logo p {
+    bottom: 20%;
+  }
   .overlay .logo p span {
     display: block;
   }
@@ -107,7 +110,7 @@
 @media screen and (max-width: 600px) {
   .overlay .logo p {
     font-size: 24px;
-    bottom: 100px;
+    bottom: 40%;
   }
   .overlay .logo p span {
     display: block;
@@ -243,6 +246,9 @@
 .faq__detail {
   display: flex;
   justify-content: center;
+}
+.faq__detail p {
+  line-height: 1.5rem;
 }
 
 .contact__content {
