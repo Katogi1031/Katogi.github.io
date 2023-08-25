@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- URL添付で表示される画像の指定 -->
+        <meta property="og:image" content="../img/logo.png">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"/>
+        
+        <!-- jQueryの読み込み -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <title>Recruit Information</title>
+
+        <!--キャッシュを無効化。毎回正しいデータを閲覧してもらう-->
+        <meta http-equiv="Cache-Control" content="no-store">
+    </head>
+    <body>
+        <div id="global-container">
+            <div class="container">
+                <!-- ヘッダーの読み込み -->
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a href="./en.html"><img src="../img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img"></a>
+                        </div>
+                
+                        <nav class="header__nav" id="js-nav">
+                            <ul class="header__ul header__items">
+                                <!-- <li class="header__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="header__li"><a href="./aboutus_en.html">About us</a></li>
+                                <li class="header__li"><a href="./works_en.html">Works</a></li>
+                                <li class="header__li"><a href="./recruit_en.html">Recruit</a></li>
+                                <li class="header__li"><a href="./contact_en.html">Contact</a></li>
+                                <li class="header__li multilingual"><a href="../index.html">JP</a> / EN</li>
+                            </ul>
+                        </nav>
+                
+                        <button class="header__hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+                <main id="content">
+                    <div class="recruit2">
+                        <div class="title">
+                            <p>Recruit Information</p>
+                        </div>
+                        <div class="recruit2__info">
+                            <table class="record-table">
+                                <tr class="record">
+                                    <th class="record__item">Occupation</th>
+                                    <td class="record__content">Riggin Artist<br>Technical Artist</td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Employment</th>
+                                    <td class="record__content">Regular employee / contract employee</td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Job description</th>
+                                    <td class="record__content">
+                                        <p>Riggin Artist</p>
+                                        
+                                        <ul>
+                                            <li>General rigging work in video production, game production, metaverse production, etc.</li>
+                                            <li>Skeleton setting, weight adjustment, controller creation</li>
+                                        </ul>
+                                        <p>Technical Artist</p>
+                                        <ul>
+                                            <li>Development and operation of in-house tools and support for client tool development</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Required Skills</th>
+                                    <td class="record__content">
+                                        <p>＜Required Skills＞</p>
+                                        <ul>
+                                            <li>At least 1 year of rigging 3D modeling using Maya</li>
+                                        </ul>
+                                        <p>＜Preffered Skills＞</p>
+                                        <ul>
+                                            <li>Setup in Unreal Engine / Blender</li>
+                                            <li>Production progrress management / Team management / mentoring newcomers</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Workplace</th>
+                                    <td class="record__content">Remote work</td>
+                                </tr>
+                                <tr class="record last">
+                                    <th class="record__item">Work hours</th>
+                                    <td class="record__content">Flextime<br>Break time : 1h<br>coretime 11:30~15:30</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="./contact_en.html" class="btn btn-flat"><span>Apply / Contact</span></a>
+                    </div>
+                    
+                </main>
+
+                <!-- フッター -->
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="logo">
+                                <a href="./en.html">
+                                    <img src="../img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="privacy-policy">
+                                <a href="./policy.html">Privacy Policy</a>
+                            </div>
+                            <p class="copy-right">&copy; 2023 Parnas inc.</p>
+                        </div>
+                        
+                        <nav class="footer__nav">
+                            <ul class="footer__ul">
+                                <!-- <li class="footer__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="footer__li"><a href="./aboutus_en.html">About us</a></li>
+                                <li class="footer__li"><a href="./works_en.html">Works</a></li>
+                                <li class="footer__li"><a href="./recruit_en.html">Recruit</a></li>
+                                <li class="footer__li"><a href="./contact_en.html">Contact</a></li>
+                                <!-- <li class="header__li multilingual"><a href="">JP</a> / EN</li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../js/lib/mobile-menu.js"></script>
+    </body>
+</html>

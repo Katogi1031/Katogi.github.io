@@ -1,0 +1,148 @@
+@use '../globals' as *;
+@use './common' as *;
+
+
+.production{
+
+    // タイトル
+    @extend .temp-title;
+    padding-bottom: 100px;
+    line-height: 0.8em;
+
+    @include mq(sm){
+        width: 90%;
+    }
+
+    &__text{
+        & .title p{
+            @include mq(sm){
+                font-size: 28px;
+            }
+        }
+        & .attention p{
+            font-size: 16px;
+
+            @include mq(sm){
+                font-size: 14px;
+            }
+        }
+        & .title{
+            text-align: start;
+            padding-left: 100px;
+        }
+    }
+
+    &__movie iframe{
+        // text-align: center;
+        margin: 0 auto;
+        @include mq(md){
+            width: 90%;
+            height: 400px;
+        }
+        @include mq(sm){
+            height: 200px;
+        }
+
+    }
+
+    // & .btn.btn-flat{
+    //     margin-top: 50px;
+    //     @extend .btn-lg;
+        
+    //     @include mq(sm){
+    //         font-size: 16px;
+    //     }
+    // }
+}
+
+.prodoct_service{
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    // justify-content: center;
+    // display: flex;
+    // text-align: center;
+    .service_container{
+        // text-align: center;
+        width: 100%;
+
+        .title{
+            text-align: end;
+            margin-right: 100px;
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+
+            @include mq(sm){
+                flex-wrap: wrap;
+            }
+
+            // width: 80%;
+            img{
+                width: 300px;
+                // height: 250px;
+                margin-left: 5px;
+
+                @include mq(md){
+                    width: 250px;
+                }
+
+                @include mq(sm){
+                    width: 250px;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .texts{
+            // width: 50%;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            // text-align: center;
+
+            @include mq(sm){
+                // width: 80%;
+                
+            }
+            
+            .text{
+                
+                text-align: left;
+
+                @include mq(sm){
+                    font-size: 14px;
+                    // text-align: center;
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+.product_contact{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 100px;
+    .btn.btn-flat{
+        margin: 0 auto;
+        // margin-top: 50px;
+        margin-bottom: 50px;
+        @extend .btn-lg;
+        
+        @include mq(sm){
+            font-size: 16px;
+        }
+    }
+} 
+    
+
+.service_image{
+    
+    & img{
+        width: 500px;
+        height: auto;
+        margin-top: 30px;
+    }
+}

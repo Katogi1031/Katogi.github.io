@@ -1,0 +1,135 @@
+@use '../globals' as *;
+@use './common' as *;
+
+.desc-contents{
+    // display: flex;
+    width: 100%;
+    // background-color: rgba(2, 100, 176, 0.1);
+    background-color: #fff;
+    object-fit: cover;
+    
+    
+    
+    .content-wrap{
+        @extend .top-content-wrap;
+        display: flex;
+        justify-content: center;   
+        padding-top: 100px;
+        padding-bottom: 200px; 
+        
+        @include mq(md){
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+        
+        @include mq(sm){
+            width: 100%;
+            padding-bottom: 100px;
+        }
+        
+        & span.parnas-area{
+            @extend .grad-title;
+    
+            @include mq(md){
+                // width: 60%;
+                text-align: center;
+            }
+        }
+    }
+    
+
+    & .content-left{
+        align-items: center;
+        margin-right: 100px;
+
+        @include mq(md){
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        @include mq(sm){
+            text-align: center;
+        }
+
+        & .main-title{
+            padding-bottom: 30px;
+
+            @include mq(md){
+                // width: 60%;
+                padding-bottom: 0;
+            }
+            &  p{
+                font-size: 28px;
+                line-height: 1.5em;
+    
+                @include mq(md){
+                    font-size: 24px;
+                }
+    
+                @include mq(sm){
+                    font-size: 22px;
+                }
+            }
+
+            & span.indent{
+                display: block;
+
+                @include mq(md){
+                    display: inline;
+                }
+                @include mq(sm){
+                    display: block;
+                }
+            }
+
+            @include mq(sm){
+                & span.remove{
+                    display: none;
+                }
+            }
+        }
+        
+
+        & .text p{
+            font-size: 14px;
+            line-height: 1.5rem;
+        }
+
+        @include mq(sm){
+            & .text span{
+                display: block;
+            }
+        }
+
+        & .btn-flat{
+            @extend .btn-lg;
+            
+            @include mq(md){
+                font-size: 16px;
+            }
+            @include mq(sm){
+                font-size: 14px;       
+            }
+        }
+    }
+
+    & .content-right{
+        display: flex;
+        align-items: flex-end;
+
+        @include mq(md){
+            margin: 0 auto;
+            text-align: center;
+        }
+        & img{
+            width: 500px;
+            @include mq(md){
+                width: 70%;
+            }
+            @include mq(sm){
+                width: 80%;       
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+[
+    {
+        "name" : "T.Yamashita",
+        "job_title" : "代表取締役",
+        "carrer" : ["一橋大学経済学部卒。広告会社勤務",
+                    "オランダ駐在、経営企画を経て2022年Parnas創業"
+                ],
+        "image" : "img/member/taka.png"
+    },
+    {
+        "name" : "K.Yamashita",
+        "job_title" : "テクニカルアーティスト",
+        "carrer" : ["リガー兼TAとしてCG制作会社10年勤務",
+                    "数のTVアニメ、スマホ向けゲーム制作に従事",
+                    "MELツール作成・物理演算に強み"],
+        "image" : "img/member/Squid_illust_02.png"
+    },
+    {
+        "name" : "R.Yanagi",
+        "job_title" : "リギングアーティスト",
+        "carrer" : ["リガーとしてCG制作会社6年勤務",
+                    "多数のTVアニメ、映像作品制作に従事",
+                    "キャラクターリギング、Unityに強み"],
+        "image" : "img/member/Squid_illust_02.png"
+    },
+    {
+        "name" : "T. Kikuchi",
+        "job_title" : "リギングアーティスト",
+        "carrer" : ["CG歴 : フリーランスのリガーとして3年",
+                     "デモリールリギング監修",
+                     "アニメーションエイドリギングクラス受講"],
+        "image" : "img/member/kikuchi1.png"
+    },
+    {
+        "name" : "H. Kanouchi",
+        "job_title" : "リギングアーティスト",
+        "carrer" : ["CG専門学校卒業",
+                    "アニメーター兼リガーとしてCG制作会社5年勤務"],
+        "image" : "img/member/Squid_illust_02.png"
+    },
+    {
+        "name" : "Y.Daita",
+        "job_title" : "リギングアーティスト&モデラ―",
+        "carrer" : ["大学院にてモーションキャプチャーによるアニメーション制作を研究",
+                    "CG歴:フリーランスのモデラ―として2年活動",
+                    "主にゲームオブジェクトを担当"],
+        "image" : "img/member/daita.png"
+    },
+    {
+        "name" : "Y.Jidaisho",
+        "job_title" : "リギングアーティスト&モデラ―",
+        "carrer" : ["前職にて音楽,映像事業部部長",
+                    "CG歴：MV制作を中心に2年以上"],
+        "image" : "img/member/jidaisho.png"
+    },
+    {
+        "name" : "Y.Toyama",
+        "job_title" : "顧問",
+        "carrer" : ["あらた監査法人/公認会計士",
+                    "リクルート英国財務統括会社Director"],
+        "image" : "img/member/Squid_illust_02.png"
+    },
+    {
+        "name": "A.Katogi",
+        "job_title": "エンジニア",
+        "carrer": ["公立はこだて未来大学学部4年",
+                    "人工知能専攻"],
+        "image" : "img/member/Katogi_cat.jpg"
+    }
+
+]

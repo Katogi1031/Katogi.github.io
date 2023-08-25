@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- URL添付で表示される画像の指定 -->
+        <meta property="og:image" content="../img/logo.png">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <!-- jQueryの読み込み -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <!-- ポップアッププラグイン http://dinbror.dk/blog/bpopup/ -->
+        <script src="../js/jquery.bpopup-0.11.0.min.js"></script>
+        <script src="../js/lib/popup.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <title>Parnas</title>
+
+        <!--キャッシュを無効化。毎回正しいデータを閲覧してもらう-->
+        <meta http-equiv="Cache-Control" content="no-store">
+    </head>
+    <body>
+        <div id="global-container">
+            <div class="container">
+                <!-- ヘッダーの読み込み -->
+                <header class="header">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a href="./en.html"><img src="../img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img"></a>
+                        </div>
+                
+                        <nav class="header__nav" id="js-nav">
+                            <ul class="header__ul header__items">
+                                <!-- <li class="header__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="header__li"><a href="./aboutus_en.html">About us</a></li>
+                                <li class="header__li"><a href="./works_en.html">Works</a></li>
+                                <li class="header__li"><a href="./recruit_en.html">Recruit</a></li>
+                                <li class="header__li"><a href="./contact_en.html">Contact</a></li>
+                                <li class="header__li multilingual"><a href="../index.html">JP</a> / EN</li>
+                            </ul>
+                        </nav>
+                
+                        <button class="header__hamburger hamburger" id="js-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- コンテンツ -->
+                <main id="content">
+                    <div class="company">
+                        <div class="title">
+                            <!-- <span class="">会社概要</span> -->
+                            <p>Company</p>
+                        </div>
+                        <div class="company__info">
+                            <table class="record-table">
+                                <tr class="record">
+                                    <th class="record__item">Company Name</th>
+                                    <td class="record__content">Parnas Co., Ltd.</td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">CEO</th>
+                                    <td>Takahiro Yamashita</td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Business Content</th>
+                                    <td class="record__content">Rigging operating support</td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Member</th>
+                                    <td class="record__content">9 members</td>
+                                </tr>
+                                <tr class="record">
+                                    <th class="record__item">Establishment</th>
+                                    <td class="record__content">March 2022</td>
+                                </tr>
+                                <tr class="record last">
+                                    <th class="record__item">Location</th>
+                                    <td class="record__content">2-17-1 Konan, Minato-ku, Tokyo, Keio Shinagawa Building 2F Room 010</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="president">
+                        <div class="title">
+                            <p>Message</p>
+                        </div>
+                        <div class="message">
+                            <div class="message__left">
+                                <div class="president__info">
+                                    <img src="../img/president.png" alt="">
+                                    <p>CEO<br>Takahiro Yamashita</p>
+                                </div>
+                            </div>
+                            <div class="message__right">
+                                <div class="president__message">
+                                    <span>
+                                        We offer contract services specializing in rigging.
+                                    </span>
+                                    <span>
+                                        Full remote to provide opporunities for young people all over Japanto work
+                                        in the rigging area, which is the most difficult to train human resources.
+                                        <br>
+                                        This is how Parnas was born.
+                                    </span>
+                                    <span>
+                                        Our team is working together to hone our skills so that we can
+                                        deliver excitement to people around the world who look forward to Japanes CG content.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="member">
+                        <div class="title">
+                            <p>Member</p>
+                        </div>
+                        <div class="member__intro">
+                            <div class="member__intro__items">
+                                <ul>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card1" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">T.Yamashita</p>
+                                                <p class="title">CEO</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card1 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">T.Yamashita</p>
+                                                        <p class="title">CEO</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <!-- <p>一橋大学経済学部卒。広告会社勤務</p> -->
+                                                            <p>Graduated from Faculty of Economics, Hitotsubashi Univ.</p>
+                                                            <p>Worked for an advertising company.</p>
+                                                            <p>Established Parnas in 2022 after working in business planning in the Netherlands.</p>
+                                                            <!-- <p>リクルート入社(20??~20??年)</p> -->
+                                                            <!-- <p>オランダ駐在、経営企画を経て2022年Parnas創業</p> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/taka.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card2" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">K.Yamashita</p>
+                                                <p class="title">Technical Artist</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card2 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">K.Yamashita</p>
+                                                        <p class="title">TA&RiggingSV</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Worked as a rigger and TA for a CG production company for 10 years
+                                                            </p>
+                                                            <!-- <p>リクルート入社(20??~20??年)</p> -->
+                                                            <p>Engaged in many TV animation and smartphone game productions</p>
+                                                            <p>Strengths in MEL tool creation and physics</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/Squid_illust_02.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card3" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">R.Yanagi</p>
+                                                <p class="title">Rigging Artist</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card3 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">R.Yanagi</p>
+                                                        <p class="title">Riggin Artist</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Worked as a rigger for a CG production company for 6 years
+                                                            </p>
+                                                            <!-- <p>リクルート入社(20??~20??年)</p> -->
+                                                            <p>Engaged in many TV animation and smartphone game productions</p>
+                                                            <p>Strengths in character rigging and Unity</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/Squid_illust_02.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card4" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">H. Kanouchi</p>
+                                                <p class="title">Rigging Artist</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card4 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">H. Kanouchi</p>
+                                                        <p class="title">Rigging Artist</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Graduated from CG vocational shool.</p>
+                                                            <p>Worked at a CG production company for 5 years as an animator and rigger.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/Squid_illust_02.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card5" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">T. Kikuchi</p>
+                                                <p class="title">Riggin Artist</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card5 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">T. Kikuchi</p>
+                                                        <p class="title">Rigging Artist</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Worked as a freelance rigger for 3 years.</p>
+                                                            <p>Demo reel rigging supervision.</p>
+                                                            <p>Take an animation aid rigging class</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/kikuchi1.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card6" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">Y.Daita</p>
+                                                <p class="title">Rigging Artist</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card6 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">Y.Daita</p>
+                                                        <p class="title">Riggin Artist & Modeler</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Studied animation production using motion capture at graduate school.</p>
+                                                            <p>Worked as a freelance modeler for 2 years.</p>
+                                                            <p>Mainly in charge of game objects.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/daita.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card7" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">Y.Jidaisho</p>
+                                                <p class="title">Rigging Artist</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card7 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">Y.Jidaisho</p>
+                                                        <p class="title">Rigging Artist</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>In his previous job, he was General Manager of the Music
+                                                                and Video Business Division.
+                                                            </p>
+                                                            <p>Over 2 years of experience in MV production.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/jidaisho.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card8" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">Y.Toyama</p>
+                                                <p class="title">Adviser</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card8 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">Y.Toyama</p>
+                                                        <p class="title">Adviser</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Arata Audit Corporation/Certified Public Accountant.</p>
+                                                            <p>Director of Recruit UK Finance Company.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/Squid_illust_02.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                    <!-- <li>
+                                        <div class="member_item">
+                                            <a id="card6" class="popup-show">
+                                                <img src="./img/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">深田安莉</p>
+                                                <p class="title">アニメーター</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card6 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">深田安莉</p>
+                                                        <p class="title">アニメーター</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>CG歴 : フリーランスのリガーとして3年</p>
+                                                            <p>デモリールリギング監修</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="./img/Squid_illust_02.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li> -->
+                                    
+                                    <li>
+                                        <div class="member_item">
+                                            <a id="card9" class="popup-show">
+                                                <img src="../img/member/Squid_illust_02.png" alt="">
+                                            </a>
+                                            <div class="title-name">
+                                                <p class="name">A.Katogi</p>
+                                                <p class="title">Enginner</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="card9 message-box">
+                                            <div class="profile">
+                                                <div class="profile__left">
+                                                    <div class="personal-info">
+                                                        <p class="name">A.Katogi</p>
+                                                        <p class="title">Enginner</p>
+                                                    </div>
+                                                    <div class="carrer">
+                                                        <p>【Carrer】</p>
+                                                        <div class="carrer__detail">
+                                                            <p>Future Universiy Hakodate</p>
+                                                            <p>Artificial Intelligence Major</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile__right">
+                                                    <div class="personal-img">
+                                                        <img src="../img/member/Katogi.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="close-popup"><span class="batsu"></span></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </main>
+
+                <!-- フッター -->
+                <footer class="footer">
+                    <div class="footer__inner">
+                        <div class="footer__content">
+                            <div class="logo">
+                                <a href="./index.html">
+                                    <img src="../img/logo_grey_text.png" alt="Parnas パルナス" class="logo__img">
+                                </a>
+                            </div>
+                            <div class="privacy-policy">
+                                <a href="./policy.html">Privacy Policy</a>
+                            </div>
+                            <p class="copy-right">&copy; 2023 Parnas inc.</p>
+                        </div>
+                        
+                        <nav class="footer__nav">
+                            <ul class="footer__ul">
+                                <!-- <li class="footer__li"><a href="./index.html">ホーム</a></li> -->
+                                <li class="footer__li"><a href="./aboutus_en.html">About us</a></li>
+                                <li class="footer__li"><a href="./works_en.html">Works</a></li>
+                                <li class="footer__li"><a href="./recruit_en.html">Recruit</a></li>
+                                <li class="footer__li"><a href="./contact_en.html">Contact</a></li>
+                                <!-- <li class="footer__li"><a href="">English</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="../js/lib/mobile-menu.js"></script>
+
+    </body>
+</html>

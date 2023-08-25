@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- URL添付で表示される画像の指定 -->
+        <meta property="og:image" content="./img/logo.png">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <!-- jQueryの読み込み -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <!-- ポップアッププラグイン http://dinbror.dk/blog/bpopup/ -->
+        <script src="./js/jquery.bpopup-0.11.0.min.js"></script>
+        <script src="./js/lib/popup.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Parnas 会社概要</title>
+
+        <!--キャッシュを無効化。毎回正しいデータを閲覧してもらう-->
+        <meta http-equiv="Cache-Control" content="no-store">
+    </head>
+    <body>
+        <div class="member">
+            <div class="title">
+                <p>メンバー紹介</p>
+            </div>
+            <div class="member__intro">
+                <div class="member__intro__items">
+                    <ul id="member-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script>
+       // JSONファイルからパーソナル情報を読み込む
+fetch('member/member.json')
+  .then(response => response.json())
+  .then(data => {
+    const memberList = document.getElementById('member-list');
+    let isPopupVisible = false;
+    let activePopupIndex = -1;
+
+    // パーソナル情報の数だけfor文でHTML要素を作成する
+    for (let i = 0; i < data.length; i++) {
+        const member = data[i];
+        const listItem = document.createElement('li');
+
+        const memberItem = document.createElement('div');
+        memberItem.className = 'member_item';
+        listItem.appendChild(memberItem);
+
+        const popupLink = document.createElement('a');
+        popupLink.id = 'card' + i;
+        popupLink.className = 'popup-show';
+        memberItem.appendChild(popupLink);
+
+        const memberImg = document.createElement('img');
+        memberImg.src = member.image;
+        memberImg.alt = '';
+        popupLink.appendChild(memberImg);
+
+        const titleName = document.createElement('div');
+        titleName.className = 'title-name';
+        memberItem.appendChild(titleName);
+
+        const name = document.createElement('p');
+        name.className = 'name';
+        name.textContent = member.name;
+        titleName.appendChild(name);
+
+        const title = document.createElement('p');
+        title.className = 'title';
+        title.textContent = member.title;
+        titleName.appendChild(title);
+
+        const messageBox = document.createElement('div');
+        messageBox.className = 'card' + i + ' message-box';
+        listItem.appendChild(messageBox);
+
+        const profile = document.createElement('div');
+        profile.className = 'profile';
+        messageBox.appendChild(profile);
+
+        const profileLeft = document.createElement('div');
+        profileLeft.className = 'profile__left';
+        profile.appendChild(profileLeft);
+
+        const personalInfo = document.createElement('div');
+        personalInfo.className = 'personal-info';
+        profileLeft.appendChild(personalInfo);
+
+        const personalName = document.createElement('p');
+        personalName.className = 'name';
+        personalName.textContent = member.name;
+        personalInfo.appendChild(personalName);
+
+        const personalTitle = document.createElement('p');
+        personalTitle.className = 'title';
+        personalTitle.textContent = member.title;
+        personalInfo.appendChild(personalTitle);
+
+        const carrer = document.createElement('div');
+        carrer.className = 'carrer';
+        profileLeft.appendChild(carrer);
+
+        const carrerTitle = document.createElement('p');
+        carrerTitle.textContent = '【経歴】';
+        carrer.appendChild(carrerTitle);
+
+        const carrerDetail = document.createElement('div');
+        carrerDetail.className = 'carrer__detail';
+        carrer.appendChild(carrerDetail);
+
+        for (let j = 0; j < member.carrer.length; j++) {
+        const carrerItem = document.createElement('p');
+        carrerItem.textContent = member.carrer[j];
+        carrerDetail.appendChild(carrerItem);
+        }
+
+        const profileRight = document.createElement('div');
+        profileRight.className = 'profile__right';
+        profile.appendChild(profileRight);
+
+        const personalImg = document.createElement('div');
+        personalImg.className = 'personal-img';
+        profileRight.appendChild(personalImg);
+
+        const img = document.createElement('img');
+        img.src = member.image;
+        personalImg.appendChild(img);
+
+        const closePopup = document.createElement('a');
+        closePopup.className = 'close-popup';
+        messageBox.appendChild(closePopup);
+
+        const span = document.createElement('span');
+        span.className = 'batsu';
+        closePopup.appendChild(span);
+
+        // ポップアップを閉じるイベントリスナー
+        closePopup.addEventListener('click', function() {
+            hidePopup();
+        });
+
+        memberList.appendChild(listItem);
+
+        // ポップアップ表示関数
+        function showPopup(index) {
+            isPopupVisible = true;
+            activePopupIndex = index;
+            listItem.classList.add('active');
+        }
+
+        // ポップアップ非表示関数
+        function hidePopup() {
+            isPopupVisible = false;
+            activePopupIndex = -1;
+            const activeListItem = document.querySelector('.active');
+            if (activeListItem) {
+                activeListItem.classList.remove('active');
+            }
+        }
+
+        // メンバーアイテムのクリックイベント
+        popupLink.addEventListener('click', function() {
+            if (!isPopupVisible) {
+                showPopup(i);
+            }
+        });
+
+        // ポップアップの外部または閉じるボタンをクリックしたときの処理
+        document.addEventListener('click', function(event) {
+            const target = event.target;
+            if (
+                isPopupVisible &&
+                !target.closest('.message-box') &&
+                !target.classList.contains('popup-show')
+            ) {
+                hidePopup();
+            }
+        });
+    }
+});
+
+
+
+
+    </script>
+</html>
