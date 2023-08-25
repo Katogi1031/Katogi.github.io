@@ -2,9 +2,7 @@
 @use './common' as *;
 
 .desc-contents{
-    // display: flex;
     width: 100%;
-    // background-color: rgba(2, 100, 176, 0.1);
     background-color: #fff;
     object-fit: cover;
     
@@ -33,7 +31,7 @@
     
             @include mq(md){
                 // width: 60%;
-                text-align: center;
+                text-align: start;
             }
         }
     }

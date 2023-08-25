@@ -447,7 +447,7 @@ body {
 }
 @media screen and (max-width: 960px) {
   .desc-contents .content-wrap span.parnas-area {
-    text-align: center;
+    text-align: start;
   }
 }
 .desc-contents .content-left {
