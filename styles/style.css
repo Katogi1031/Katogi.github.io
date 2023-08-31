@@ -159,7 +159,7 @@ body {
   padding: 10px;
 }
 
-.grad-title, .service__title span, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+.grad-title, .feature__title span, .service__title span, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
   text-align: start;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -168,7 +168,7 @@ body {
   color: rgba(2, 101, 176, 0.302);
 }
 @media screen and (max-width: 600px) {
-  .grad-title, .service__title span, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+  .grad-title, .feature__title span, .service__title span, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
     font-size: 64px;
     text-align: center;
   }
@@ -1555,6 +1555,15 @@ body {
   }
 }
 
+.feature__title span {
+  color: #fff;
+  -webkit-text-stroke: 1px blue;
+  text-stroke: 1px blue;
+}
+.feature__content .image > img {
+  width: 260px;
+  height: 230px;
+}
 #global-container {
   width: 100%;
   position: relative;

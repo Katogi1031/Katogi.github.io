@@ -1,0 +1,29 @@
+@use '../globals/' as *;
+@use './common' as *;
+
+.feature{
+    &__title{
+        & span{
+            @extend .grad-title;
+            color: #fff; 
+            -webkit-text-stroke: 1px blue; 
+            text-stroke: 1px blue;
+        }
+    }
+
+    &__content{
+        & .image > img{
+            width: 260px; 
+            height: 230px;
+
+            @include mq(md){
+
+            }
+            @include mq(sm){
+
+            }
+
+        }
+    }
+
+}
