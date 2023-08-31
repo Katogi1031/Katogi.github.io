@@ -6,6 +6,14 @@
     @include mq(sm){
         margin: 0 auto;
     }
+
+    &__title span{
+        @extend .grad-title;   
+
+        @include mq(md){
+            text-align: start;
+        }
+    }
     & .content-wrap{
         @extend .top-content-wrap;
     }
