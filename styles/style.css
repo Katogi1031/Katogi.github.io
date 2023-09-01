@@ -1598,7 +1598,11 @@ body {
 }
 @media screen and (max-width: 600px) {
   .feature__content .explain {
-    width: 100%;
+    width: 90%;
+    margin: auto;
+  }
+  .feature__content .explain > p {
+    font-size: 12px;
   }
 }
 .feature__content .title p {

@@ -43,7 +43,12 @@
             }
 
             @include mq(sm){
-                width: 100%;
+                width: 90%;
+                margin: auto;
+
+                & > p{
+                    font-size: 12px;
+                }
             }
         }
 
