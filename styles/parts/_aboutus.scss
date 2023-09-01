@@ -1,0 +1,20 @@
+@use '../globals/' as *;
+@use './common' as *;
+
+.company{
+    padding-top: 200px;
+
+
+
+    & > .title > img{
+        width: 400px;
+        height: auto;
+
+        @include mq(md){
+            width: 300px;
+        }
+        @include mq(sm){
+            width: 250px;
+        }
+    }
+}
