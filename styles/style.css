@@ -1664,8 +1664,14 @@ body {
   }
 }
 
+.representative {
+  padding-top: 200px;
+}
+.representative > .title {
+  text-align: center;
+}
 .representative > .title > img {
-  width: 400px;
+  width: 300px;
   height: auto;
 }
 @media screen and (max-width: 960px) {
@@ -1676,6 +1682,23 @@ body {
 @media screen and (max-width: 600px) {
   .representative > .title > img {
     width: 250px;
+  }
+}
+.representative > .content {
+  padding-top: 50px;
+}
+.representative > .content img {
+  width: 300px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .representative > .content img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .representative > .content .text {
+    padding-top: 50px;
   }
 }
 
