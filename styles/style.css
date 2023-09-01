@@ -110,7 +110,7 @@ body {
   font-size: 25px;
 }
 
-.title-lg, .temp-title .title p, .policy .title p, .member .title p, .recruit2 .title p, .production .title p, .president .title p, .company .title p {
+.title-lg, .temp-title .title p, .policy .title p, .member .title p, .recruit2 .title p, .production .title p, .president .title p {
   font-size: 42px;
 }
 
@@ -122,13 +122,13 @@ body {
   font-size: 28px;
 }
 
-.temp-title, .policy, .member, .recruit2, .production, .president, .company {
+.temp-title, .policy, .member, .recruit2, .production, .president {
   width: 100%;
   padding-top: 100px;
   margin: 0 auto;
   text-align: center;
 }
-.temp-title .title, .policy .title, .member .title, .recruit2 .title, .production .title, .president .title, .company .title {
+.temp-title .title, .policy .title, .member .title, .recruit2 .title, .production .title, .president .title {
   text-align: center;
 }
 .btn-lg, .recruit2 .btn-flat, .recruit__texts .btn-flat, .product_contact .btn.btn-flat, .top .btn-gradient, .service__details .overhang-flat, .desc-contents .btn-flat {
@@ -136,25 +136,25 @@ body {
   padding: 10px 15px;
 }
 
-.table-prop, .recruit2__info, .company__info {
+.table-prop, .company__info, .recruit2__info {
   font-family: "Roboto", serif;
 }
-.table-prop table, .recruit2__info table, .company__info table {
+.table-prop table, .company__info table, .recruit2__info table {
   text-align: start;
   width: 50%;
   margin: 20px auto;
 }
-.table-prop .record-table, .recruit2__info .record-table, .company__info .record-table {
+.table-prop .record-table, .company__info .record-table, .recruit2__info .record-table {
   padding: 10px 0;
   font-size: 16px;
 }
-.table-prop .record-table th, .recruit2__info .record-table th, .company__info .record-table th {
+.table-prop .record-table th, .company__info .record-table th, .recruit2__info .record-table th {
   background: #e1e0e0;
   border: 1px solid #ccc;
   color: black;
   padding: 10px;
 }
-.table-prop .record-table td, .recruit2__info .record-table td, .company__info .record-table td {
+.table-prop .record-table td, .company__info .record-table td, .recruit2__info .record-table td {
   border: 1px solid #ccc;
   padding: 10px;
 }
@@ -849,36 +849,6 @@ body {
   height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
   min-height: 100%;
   min-width: 100%;
-}
-
-@media screen and (max-width: 960px) {
-  .company .title p {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .company .title p {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 960px) {
-  .company__info .record-table {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .company__info .record-table {
-    width: 90%;
-  }
-  .company__info .record-table th, .company__info .record-table td {
-    border-bottom: none;
-    display: block;
-    padding-left: 10px;
-    font-size: 12px;
-  }
-  .company__info .record-table .last td:last-child {
-    border-bottom: 1px solid #ccc;
-  }
 }
 
 @media screen and (max-width: 960px) {
@@ -1651,6 +1621,15 @@ body {
 .company {
   padding-top: 200px;
 }
+.company > .title {
+  text-align: center;
+  padding-bottom: 100px;
+}
+@media screen and (max-width: 600px) {
+  .company > .title {
+    padding-bottom: 50px;
+  }
+}
 .company > .title > img {
   width: 400px;
   height: auto;
@@ -1662,6 +1641,40 @@ body {
 }
 @media screen and (max-width: 600px) {
   .company > .title > img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .company__info .record-table {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .company__info .record-table {
+    width: 90%;
+  }
+  .company__info .record-table th, .company__info .record-table td {
+    border-bottom: none;
+    display: block;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .company__info .record-table .last td:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.representative > .title > img {
+  width: 400px;
+  height: auto;
+}
+@media screen and (max-width: 960px) {
+  .representative > .title > img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .representative > .title > img {
     width: 250px;
   }
 }
