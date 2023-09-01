@@ -60,12 +60,28 @@
         }
     }
 
+    &__image{
+        & img{
+            border-radius: 20px;
+            width: 600px;
+            height: auto;
+
+            @include mq(md){
+                width: 350px;
+            }
+        }
+    }
+
     & > .content{
         padding-top: 50px;
         & img{
+            
             width: 300px;
             height: auto;
-
+            
+            @include mq(md){
+                width: 200px;
+            }
             @include mq(sm){
                 width: 200px;
             }

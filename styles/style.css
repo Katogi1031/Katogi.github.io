@@ -609,12 +609,27 @@ body {
     width: 200px;
   }
 }
+.service__image img {
+  border-radius: 20px;
+  width: 600px;
+  height: auto;
+}
+@media screen and (max-width: 960px) {
+  .service__image img {
+    width: 350px;
+  }
+}
 .service > .content {
   padding-top: 50px;
 }
 .service > .content img {
   width: 300px;
   height: auto;
+}
+@media screen and (max-width: 960px) {
+  .service > .content img {
+    width: 200px;
+  }
 }
 @media screen and (max-width: 600px) {
   .service > .content img {
