@@ -1707,6 +1707,7 @@ body {
 }
 .member > .title {
   text-align: center;
+  padding-bottom: 50px;
 }
 .member > .title > img {
   width: 400px;
