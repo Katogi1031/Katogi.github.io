@@ -2,6 +2,7 @@
 @use './common' as *;
 
 .feature{
+    padding-bottom: 200px;
     &__title{
         & span{
             @extend .grad-title;

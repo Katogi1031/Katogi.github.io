@@ -1555,6 +1555,9 @@ body {
   }
 }
 
+.feature {
+  padding-bottom: 200px;
+}
 .feature__title span {
   color: #fff;
   -webkit-text-stroke: 1px blue;
