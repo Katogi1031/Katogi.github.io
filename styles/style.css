@@ -1671,7 +1671,7 @@ body {
   text-align: center;
 }
 .representative > .title > img {
-  width: 300px;
+  width: 400px;
   height: auto;
 }
 @media screen and (max-width: 960px) {
@@ -1698,6 +1698,44 @@ body {
 }
 @media screen and (max-width: 600px) {
   .representative > .content .text {
+    padding-top: 50px;
+  }
+}
+
+.member {
+  padding-top: 200px;
+}
+.member > .title {
+  text-align: center;
+}
+.member > .title > img {
+  width: 400px;
+  height: auto;
+}
+@media screen and (max-width: 960px) {
+  .member > .title > img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .member > .title > img {
+    width: 250px;
+  }
+}
+.member > .content {
+  padding-top: 50px;
+}
+.member > .content img {
+  width: 300px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .member > .content img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .member > .content .text {
     padding-top: 50px;
   }
 }

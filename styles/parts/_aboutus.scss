@@ -59,7 +59,45 @@
         text-align: center;
         
         & > img{
+            width: 400px;
+            height: auto;
+    
+            @include mq(md){
+                width: 300px;
+            }
+            @include mq(sm){
+                width: 250px;
+            }
+        }
+    }
+
+    & > .content{
+        padding-top: 50px;
+        & img{
             width: 300px;
+            height: auto;
+
+            @include mq(sm){
+                width: 200px;
+            }
+        }
+
+        & .text{
+            @include mq(sm){
+                padding-top: 50px;
+            }
+        }
+    }
+
+}
+.member{
+    padding-top: 200px;
+    
+    & > .title{
+        text-align: center;
+        
+        & > img{
+            width: 400px;
             height: auto;
     
             @include mq(md){
