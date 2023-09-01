@@ -11,6 +11,14 @@
         }
     }
 
+    & > .row{
+        padding-top: 200px;
+
+        @include mq(sm){
+            padding-top: 80px;
+        }
+    }
+
     &__content{
         & .image > img{
             width: 260px; 
@@ -43,7 +51,7 @@
 
             }
             @include mq(sm){
-                font-size: 8px;
+                font-size: 12px;
             }
         }
 
