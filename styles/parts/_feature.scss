@@ -20,9 +20,45 @@
 
             }
             @include mq(sm){
-
+                width: 150px;
+                height: 130px;
             }
 
+        }
+
+        & .title p{
+            font-size: 36px;
+
+            @include mq(md){
+
+            }
+            @include mq(sm){
+                font-size: 24px;
+            }
+        }
+        & .keyword p{
+            font-size: 18px;
+
+            @include mq(md){
+
+            }
+            @include mq(sm){
+                font-size: 8px;
+            }
+        }
+
+        & .feature-image > img{
+            width: 320px;
+            height: 320px;
+
+            @include mq(md){
+                width: 250px;
+                height: 250px;
+            }
+            @include mq(sm){
+                width: 200px;
+                height: 200px;
+            }
         }
     }
 
