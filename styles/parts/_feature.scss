@@ -48,8 +48,8 @@
         }
 
         & .feature-image > img{
-            width: 320px;
-            height: 320px;
+            width: 400px;
+            height: 400px;
 
             @include mq(md){
                 width: 250px;

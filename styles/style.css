@@ -1587,8 +1587,8 @@ body {
   }
 }
 .feature__content .feature-image > img {
-  width: 320px;
-  height: 320px;
+  width: 400px;
+  height: 400px;
 }
 @media screen and (max-width: 960px) {
   .feature__content .feature-image > img {
