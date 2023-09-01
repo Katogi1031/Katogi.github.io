@@ -24,6 +24,10 @@
         padding-top: 100px;
         text-align: center;
 
+        @include mq(sm){
+            padding-top: 50px;
+        }
+
         & iframe{
             @include mq(md){
                 width: 600px;
@@ -31,7 +35,7 @@
             }
             @include mq(sm){
                 width: 300px;
-                height: 300px;
+                height: 200px;
             }
         }
     }
@@ -41,17 +45,17 @@
     padding-top: 200px;
     
     & > .title{
-        text-align: center;
+        text-align: end;
         
         & > img{
             width: 400px;
             height: auto;
     
             @include mq(md){
-                width: 500px;
+                width: 350px;
             }
             @include mq(sm){
-                width: 350px;
+                width: 200px;
             }
         }
     }

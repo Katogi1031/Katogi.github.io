@@ -571,6 +571,11 @@ body {
   padding-top: 100px;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .demoreel > .movie {
+    padding-top: 50px;
+  }
+}
 @media screen and (max-width: 960px) {
   .demoreel > .movie iframe {
     width: 600px;
@@ -580,7 +585,7 @@ body {
 @media screen and (max-width: 600px) {
   .demoreel > .movie iframe {
     width: 300px;
-    height: 300px;
+    height: 200px;
   }
 }
 
@@ -588,7 +593,7 @@ body {
   padding-top: 200px;
 }
 .service > .title {
-  text-align: center;
+  text-align: end;
 }
 .service > .title > img {
   width: 400px;
@@ -596,12 +601,12 @@ body {
 }
 @media screen and (max-width: 960px) {
   .service > .title > img {
-    width: 500px;
+    width: 350px;
   }
 }
 @media screen and (max-width: 600px) {
   .service > .title > img {
-    width: 350px;
+    width: 200px;
   }
 }
 .service > .content {
