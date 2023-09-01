@@ -1564,7 +1564,7 @@ body {
   text-stroke: 1px blue;
 }
 .feature > .row {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 @media screen and (max-width: 600px) {
   .feature > .row {
@@ -1575,14 +1575,38 @@ body {
   width: 260px;
   height: 230px;
 }
+@media screen and (max-width: 960px) {
+  .feature__content .image > img {
+    width: 200px;
+    height: 180px;
+  }
+}
 @media screen and (max-width: 600px) {
   .feature__content .image > img {
     width: 150px;
     height: 130px;
   }
 }
+.feature__content .explain {
+  width: 60%;
+}
+@media screen and (max-width: 960px) {
+  .feature__content .explain {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feature__content .explain {
+    width: 100%;
+  }
+}
 .feature__content .title p {
   font-size: 36px;
+}
+@media screen and (max-width: 960px) {
+  .feature__content .title p {
+    font-size: 28px;
+  }
 }
 @media screen and (max-width: 600px) {
   .feature__content .title p {
@@ -1597,22 +1621,19 @@ body {
     font-size: 12px;
   }
 }
-.feature__content .feature-image {
-  padding-right: 100px;
-}
 @media screen and (max-width: 600px) {
   .feature__content .feature-image {
     padding-right: 0;
   }
 }
 .feature__content .feature-image > img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
 @media screen and (max-width: 960px) {
   .feature__content .feature-image > img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 600px) {

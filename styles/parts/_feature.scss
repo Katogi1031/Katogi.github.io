@@ -13,7 +13,7 @@
     }
 
     & > .row{
-        padding-top: 200px;
+        padding-top: 100px;
 
         @include mq(sm){
             padding-top: 80px;
@@ -26,20 +26,32 @@
             height: 230px;
 
             @include mq(md){
-
+                width: 200px; 
+                height: 180px;
             }
             @include mq(sm){
                 width: 150px;
                 height: 130px;
             }
+        }
 
+        & .explain{
+            width: 60%;
+
+            @include mq(md){
+                width: 75%;
+            }
+
+            @include mq(sm){
+                width: 100%;
+            }
         }
 
         & .title p{
             font-size: 36px;
 
             @include mq(md){
-
+                font-size: 28px;
             }
             @include mq(sm){
                 font-size: 24px;
@@ -57,19 +69,19 @@
         }
 
         & .feature-image{
-            padding-right: 100px;
+            // padding-right: 100px;
 
             @include mq(sm){
                 padding-right: 0;
             }
 
            & > img{
-                width: 400px;
-                height: 400px;
+                width: 350px;
+                height: 350px;
     
                 @include mq(md){
-                    width: 250px;
-                    height: 250px;
+                    width: 200px;
+                    height: 200px;
                 }
                 @include mq(sm){
                    
