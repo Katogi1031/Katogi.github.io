@@ -131,7 +131,7 @@ body {
 .temp-title .title, .policy .title, .member .title, .recruit2 .title, .production .title, .president .title {
   text-align: center;
 }
-.btn-lg, .recruit2 .btn-flat, .recruit__texts .btn-flat, .product_contact .btn.btn-flat, .top .btn-gradient, .service__details .overhang-flat, .desc-contents .btn-flat {
+.btn-lg, .recruit2 .btn-flat, .recruit__texts .btn-flat, .product_contact .btn.btn-flat, .top .btn-gradient, .desc-contents .btn-flat {
   font-size: 20px;
   padding: 10px 15px;
 }
@@ -159,7 +159,7 @@ body {
   padding: 10px;
 }
 
-.grad-title, .feature__title span, .service__title span, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+.grad-title, .feature__title span, .desc-contents span.parnas-area {
   text-align: start;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -168,13 +168,13 @@ body {
   color: rgba(2, 101, 176, 0.302);
 }
 @media screen and (max-width: 600px) {
-  .grad-title, .feature__title span, .service__title span, .service__description .main-title span:nth-child(1), .desc-contents span.parnas-area {
+  .grad-title, .feature__title span, .desc-contents span.parnas-area {
     font-size: 64px;
     text-align: center;
   }
 }
 
-.top-content-wrap, .top__content, .service .content-wrap, .desc-contents .content-wrap {
+.top-content-wrap, .top__content, .desc-contents .content-wrap {
   margin: 0 auto;
   width: 90%;
   max-width: 1070px;
@@ -547,207 +547,78 @@ body {
   }
 }
 
-.service {
-  background: #fff;
+.demoreel {
+  padding-top: 200px;
 }
-@media screen and (max-width: 600px) {
-  .service {
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 960px) {
-  .service__title span {
-    text-align: start;
-  }
-}
-.service__description {
-  margin-bottom: 50px;
-  padding-top: 100px;
-  font-size: 14px;
-}
-.service__description .main-title {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  text-align: center;
-}
-@media screen and (max-width: 960px) {
-  .service__description .main-title {
-    align-items: center;
-  }
-}
-.service__description .main-title span:nth-child(2) {
-  display: flex;
-  align-items: center;
+.demoreel > .title {
   text-align: start;
-  color: #0264B0;
-  font-size: 24px;
 }
-.service__description .main-title span:nth-child(2):before {
-  content: "";
-  width: 60px;
-  height: 1px;
-  background: #0264B0;
-  margin-right: 10px;
-}
-@media screen and (max-width: 600px) {
-  .service__description .main-title span:nth-child(2):before {
-    width: 20px;
-  }
-}
-.service__description .main-title span:nth-child(2):after {
-  content: "";
-  width: 60px;
-  height: 1px;
-  background: #0264B0;
-  margin-left: 10px;
-}
-@media screen and (max-width: 600px) {
-  .service__description .main-title span:nth-child(2):after {
-    width: 20px;
-  }
-}
-.service__description .main-title p {
-  font-size: 32px;
-}
-@media screen and (max-width: 600px) {
-  .service__description .main-title p {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .service__description .main-title p .remove {
-    display: none;
-  }
-}
-.service__details {
-  text-align: center;
-  padding-bottom: 100px;
-}
-.service__details .feature {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: start;
-  margin: 0 auto;
-  margin-bottom: 100px;
-  width: 100%;
-}
-@media screen and (max-width: 960px) {
-  .service__details .feature {
-    padding-bottom: 50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .service__details .feature {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
-.service__details .feature__title .image img {
-  width: 300px;
-  height: 260px;
-}
-.service__details .feature__text {
-  width: 40%;
-  margin-right: 100px;
-}
-@media screen and (max-width: 960px) {
-  .service__details .feature__text {
-    margin-right: 50px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .service__details .feature__text {
-    width: 90%;
-    margin-right: 0;
-    margin: 0 auto;
-  }
-}
-.service__details .feature__text .title p {
-  font-size: 24px;
-}
-@media screen and (max-width: 600px) {
-  .service__details .feature__text .title p {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .service__details .feature__text .description {
-    margin: 0 auto;
-    text-align: start;
-  }
-}
-.service__details .feature__text .description p {
-  font-size: 14px;
-  line-height: 1.5rem;
-  letter-spacing: 0.5rem;
-}
-@media screen and (max-width: 600px) {
-  .service__details .feature__text .description p {
-    font-size: 16px;
-  }
-}
-.service__details .feature__image img {
+.demoreel > .title > img {
   width: 400px;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
 }
 @media screen and (max-width: 960px) {
-  .service__details .feature__image img {
+  .demoreel > .title > img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .demoreel > .title > img {
+    width: 200px;
+  }
+}
+.demoreel > .movie {
+  padding-top: 100px;
+  text-align: center;
+}
+@media screen and (max-width: 960px) {
+  .demoreel > .movie iframe {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .demoreel > .movie iframe {
     width: 300px;
     height: 300px;
   }
 }
-@media screen and (max-width: 600px) {
-  .service__details .feature__image img {
-    width: 80%;
-    height: 200px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
+
+.service {
+  padding-top: 200px;
 }
-.service__details .feature.reverse {
-  flex-direction: row-reverse;
+.service > .title {
+  text-align: center;
 }
-.service__details .feature.reverse .feature__text {
-  margin-right: 0;
-}
-@media screen and (max-width: 600px) {
-  .service__details .feature.reverse .feature__text {
-    margin: 0 auto;
-  }
-}
-.service__details .feature.reverse .feature__image {
-  margin-right: 100px;
+.service > .title > img {
+  width: 400px;
+  height: auto;
 }
 @media screen and (max-width: 960px) {
-  .service__details .feature.reverse .feature__image {
-    margin-right: 50px;
+  .service > .title > img {
+    width: 500px;
   }
 }
 @media screen and (max-width: 600px) {
-  .service__details .feature.reverse .feature__image {
-    margin-right: 0;
+  .service > .title > img {
+    width: 350px;
   }
 }
-.service__details .overhang-flat {
-  font-size: 14px;
+.service > .content {
+  padding-top: 50px;
+}
+.service > .content img {
+  width: 300px;
+  height: auto;
 }
 @media screen and (max-width: 600px) {
-  .service__details .overhang-flat {
-    margin-top: 0;
-    font-size: 16px;
+  .service > .content img {
+    width: 200px;
   }
 }
-.service__details .overhang-flat:before {
-  transform: translateX(-90%) translateY(-25%) rotate(45deg);
-}
 @media screen and (max-width: 600px) {
-  .service__details .overhang-flat:before {
-    transform: translateX(-90%) translateY(-25%) rotate(45deg);
+  .service > .content .text {
+    padding-top: 50px;
   }
 }
 
