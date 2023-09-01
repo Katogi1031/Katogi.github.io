@@ -22,7 +22,8 @@
 
         }
         @include mq(sm){
-            width: 80%;       
+            width: 80%;  
+            height: auto;     
         }
     }
 

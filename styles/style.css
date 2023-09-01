@@ -440,6 +440,7 @@ body {
 @media screen and (max-width: 600px) {
   .desc-contents img {
     width: 80%;
+    height: auto;
   }
 }
 @media screen and (max-width: 960px) {
