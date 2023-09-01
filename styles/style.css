@@ -624,6 +624,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .service__explain {
+    width: 80%;
     padding-top: 50px;
   }
 }
