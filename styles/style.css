@@ -1741,6 +1741,44 @@ body {
   }
 }
 
+.recruit2 {
+  padding-top: 200px;
+}
+.recruit2 > .title {
+  text-align: center;
+}
+.recruit2 > .title > img {
+  width: 700px;
+  height: auto;
+}
+@media screen and (max-width: 960px) {
+  .recruit2 > .title > img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recruit2 > .title > img {
+    width: 350px;
+  }
+}
+.recruit2 > .content {
+  padding-top: 50px;
+}
+.recruit2 > .content img {
+  width: 300px;
+  height: auto;
+}
+@media screen and (max-width: 600px) {
+  .recruit2 > .content img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recruit2 > .content .text {
+    padding-top: 50px;
+  }
+}
+
 #global-container {
   width: 100%;
   position: relative;
