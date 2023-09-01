@@ -72,26 +72,48 @@
         }
     }
 
-    & > .content{
-        padding-top: 50px;
-        & img{
-            
-            width: 300px;
-            height: auto;
-            
+   &__explain{
+        padding-top: 100px;
+
+        @include mq(sm){
+            padding-top: 50px;
+        }
+        & > p{
+            font-size: 16px;
+
             @include mq(md){
-                width: 200px;
+                font-size: 16px;
             }
+
             @include mq(sm){
-                width: 200px;
+                font-size: 12px;
+            }
+        }
+   }
+
+   &__tools{
+    padding-top: 100px;
+    padding-bottom: 150px;
+        & .title{
+            & > p{
+                text-align: center;
+                font-size: 28px;
             }
         }
 
-        & .text{
-            @include mq(sm){
-                padding-top: 50px;
+        & .tools{
+            & img{
+                width: 200px;
+                height: auto;
+
+                @include mq(md){
+                    width: 120px;
+                }
+                @include mq(sm){
+                    width: 80px;
+                }
             }
         }
-    }
+   }
 
 }
