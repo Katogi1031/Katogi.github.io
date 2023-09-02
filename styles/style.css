@@ -965,10 +965,111 @@ body {
 }
 
 .recruit {
-  width: 70%;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   padding-bottom: 50px;
   padding-top: 100px;
+}
+.recruit .message {
+  margin: 0;
+  width: 100vw;
+  height: 700px;
+  background-image: url("../../img/recruit1.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+  font-size: 24px;
+}
+@media screen and (max-width: 960px) {
+  .recruit .message {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recruit .message {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recruit .message > .title {
+    top: 40%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recruit .message > .title > p {
+    font-size: 16px;
+  }
+}
+.recruit .explain {
+  background-color: #222FE6;
+}
+.recruit .explain p {
+  color: #fff;
+}
+.recruit .explain__title p {
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .recruit .explain__title p {
+    font-size: 16px;
+  }
+}
+.recruit .explain__text p {
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .recruit .explain__text p {
+    font-size: 12px;
+  }
+}
+.recruit__detail {
+  margin: 0;
+  padding: 0;
+}
+.recruit__detail .content {
+  background: #fff;
+  border-radius: 15px;
+}
+.recruit__detail .content .title p {
+  color: #222FE6;
+  font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+  .recruit__detail .content .title p {
+    font-size: 16px;
+  }
+}
+.recruit__detail .content .text p {
+  color: #000;
+  font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+  .recruit__detail .content .text p {
+    font-size: 12px;
+  }
+}
+.recruit__detail .content .btn {
+  margin: 0px 0px;
+  padding: 5px 15px 8px;
+}
+.recruit .bottom_image {
+  width: 100vw;
+  height: 500px;
+  background-image: url("../../img/recruit2.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
+}
+@media screen and (max-width: 960px) {
+  .recruit .bottom_image {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .recruit .bottom_image {
+    height: 150px;
+  }
 }
 @media screen and (max-width: 960px) {
   .recruit {

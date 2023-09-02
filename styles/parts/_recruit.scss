@@ -2,10 +2,132 @@
 @use './common' as *;
 
 .recruit{
-    width: 70%;
-    margin: 0 auto;
+    // width: 100%;
+    margin: 0;
+    padding: 0;
     padding-bottom: 50px;
     padding-top: 100px;
+
+    & .message{
+        margin:0;
+        width: 100vw;
+        height: 700px;
+        background-image: url('../../img/recruit1.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+        font-size: 24px;
+
+        
+
+        @include mq(md){
+            height: 350px;
+        }
+
+        @include mq(sm){
+            height: 250px;
+        }
+
+        & > .title {
+            @include mq(sm){
+                top: 40%;
+                left: 10%;
+
+            }
+            & > p{
+                @include mq(sm){
+                    font-size: 16px;
+                    
+                }
+            }
+        }
+        
+    }
+
+    & .explain{
+        background-color: #222FE6;
+
+        & p{
+            color: #fff;
+        }
+
+        &__title{
+            p{
+                font-size: 20px;
+
+                @include mq(sm){
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__text{
+            p{
+                font-size: 14px;
+                @include mq(sm){
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &__detail{
+        margin: 0;
+        padding: 0;
+        
+        & .content{
+            // margin-top: 20px;
+            background: #fff;
+            border-radius: 15px;
+
+            & .title{
+                p{
+                    color: #222FE6;
+                    font-size: 20px;
+
+                    @include mq(sm){
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            & .text
+            p{
+                color: #000;
+                font-size: 14px;
+
+                @include mq(sm){
+                    font-size: 12px;
+                }
+
+            }
+
+            & .btn{
+                margin: 0px 0px;
+                padding: 5px 15px 8px;
+            }
+        }
+        & .content_left{
+
+        }
+    }
+
+    & .bottom_image{
+        width: 100vw;
+        height: 500px;
+        background-image: url('../../img/recruit2.png');
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 100%;
+        
+        @include mq(md){
+            height: 250px;
+        }
+
+        @include mq(sm){
+            height: 150px;
+        }
+    }
     
     
     @include mq(md){
