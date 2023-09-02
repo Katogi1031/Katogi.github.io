@@ -974,7 +974,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 700px;
-  background-image: url("../../img/recruit1.png");
+  background-image: url("../img/recruit1.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 100%;
@@ -1056,7 +1056,7 @@ body {
 .recruit .bottom_image {
   width: 100vw;
   height: 500px;
-  background-image: url("../../img/recruit2.png");
+  background-image: url("../img/recruit2.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100% 100%;
