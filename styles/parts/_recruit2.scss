@@ -3,19 +3,9 @@
 
 
 .recruit2{
-
-    // タイトル
-    @extend .temp-title;
     padding-bottom: 100px;
 
-    & .title p{
-        @include mq(md){
-            font-size: 32px;
-        }
-        @include mq(sm){
-            font-size: 28px;
-        }
-    }
+
     
 
     &__info{
@@ -27,18 +17,28 @@
                 width: 90%;
             }
 
+            & th{
+                @include mq(sm){
+                    font-size: 12px;
+                }  
+
+            }
+
             & td{
                 @include mq(md){
                     padding: 10px;
                     text-align: start;
+
                 }
 
                 & p{
-                    line-height: 0.2em;
+                    padding-top: 20px;
+                    line-height: 0.1em;
                 }
                 & ul{
                     margin-top: 5px;
                     margin-bottom: 5px;
+
                 }
             }
 
@@ -48,7 +48,7 @@
                     border-bottom: none;
                     display: block;
                     padding-left: 10px;
-                    font-size: 16px;
+                    font-size: 14px;
                 }
 
                 & .last td:last-child{

@@ -94,7 +94,7 @@
 
    &__tools{
     padding-top: 100px;
-    padding-bottom: 150px;
+    
         & .title{
             & > p{
                 text-align: center;
@@ -116,5 +116,10 @@
             }
         }
    }
+
+   & .btn{
+    padding: 5px 15px 8px;
+    margin-bottom: 150px;
+}
 
 }
